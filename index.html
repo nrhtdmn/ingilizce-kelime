@@ -47,9 +47,15 @@ async function pullProgress(){
     if(!snap.exists())return;
     const remote=snap.data();
     const local=JSON.parse(localStorage.getItem('yds_nd_v5')||'{}');
+    
+    // Zaman damgalarini ve tekrar sayilarini kontrol et
+    const remoteTime = remote.lastUpdated || 0;
+    const localTime = local.lastUpdated || 0;
     const lr=(local.stats?.totalReviews)||0;
     const rr=(remote.stats?.totalReviews)||0;
-    if(rr>lr){
+    
+    // Eger buluttaki veri DAHA YENIYSE veya daha cok islem yapilmissa indir
+    if(remoteTime > localTime || rr > lr){
       localStorage.setItem('yds_nd_v5',JSON.stringify(remote));
       if(window._appReady){location.reload();}
     }
@@ -670,7 +676,6 @@ async function load(){
     if(!S.settings.deckSize) S.settings=data.settings||{deckSize:15,fuzzy:1};
     
     // BURASI ONEMLI: persist() kullanmiyoruz, yoksa bulutu aninda ezer. Sadece yerel hafizaya yaziyoruz.
-    S.lastUpdated = Date.now();
     localStorage.setItem(STORE, JSON.stringify(S));
     
     notify('Kelimeler yüklendi ✓');
@@ -689,6 +694,7 @@ function showLoadingScreen(show){
 }
 
 function persist(){
+  S.lastUpdated = Date.now(); // Islemin yapildigi gercek zamani muhurle
   localStorage.setItem(STORE,JSON.stringify(S));
   if(window.pushProgress) window.pushProgress();
 }
