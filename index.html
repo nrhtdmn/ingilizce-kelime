@@ -11,101 +11,69 @@
 ═══════════════════════════════════════════════════════════════ -->
 <script type="module">
 import{initializeApp}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
-import{getAuth,GoogleAuthProvider,signInWithRedirect,getRedirectResult,signOut,onAuthStateChanged}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+import{getAuth,GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
 import{getFirestore,doc,setDoc,getDoc}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
-const FB_CFG={
-  apiKey:"AIzaSyBD0BwWNj1ypc2oMk_ZndkwlqUsimC8Y4E",
-  authDomain:"yunancaokuyucu.firebaseapp.com",
-  projectId:"yunancaokuyucu",
-  storageBucket:"yunancaokuyucu.firebasestorage.app",
-  messagingSenderId:"434539375134",
-  appId:"1:434539375134:web:2538e78f0d15489c26dc0f"
-};
+const FB_CFG={apiKey:"AIzaSyBD0BwWNj1ypc2oMk_ZndkwlqUsimC8Y4E",authDomain:"yunancaokuyucu.firebaseapp.com",projectId:"yunancaokuyucu",storageBucket:"yunancaokuyucu.firebasestorage.app",messagingSenderId:"434539375134",appId:"1:434539375134:web:2538e78f0d15489c26dc0f"};
 
-const fbApp    = initializeApp(FB_CFG);
-const auth     = getAuth(fbApp);
-const db       = getFirestore(fbApp);
-const provider = new GoogleAuthProvider();
-let currentUser = null, syncTO = null;
+const fbApp=initializeApp(FB_CFG);
+const auth=getAuth(fbApp);
+const db=getFirestore(fbApp);
+const provider=new GoogleAuthProvider();
+let currentUser=null,syncTO=null;
 
-// Redirect sonucu varsa isle (sayfa yeniden yuklendiginde)
-getRedirectResult(auth).then(result => {
-  if (result?.user) console.log('Redirect ile giris basarili:', result.user.email);
-}).catch(e => console.error('Redirect sonucu hatasi:', e));
-
-// Auth durumu netlesince bu Promise resolve edilir — load() bunu bekler
-window._authReady = new Promise(resolve => {
-  onAuthStateChanged(auth, async user => {
-    currentUser = user || null;
-    window._currentUser = currentUser;
-    updateAuthUI(user);
-    if (user) {
-      await pullProgress();
-    }
-    setSyncDot(user ? 'ready' : 'off');
-    resolve();
-  });
+onAuthStateChanged(auth,async user=>{
+  currentUser=user||null;
+  window._currentUser=currentUser;
+  updateAuthUI(user);
+  if(user){await pullProgress();}
+  setSyncDot(user?'ready':'off');
+  if(window._authReadyResolve){window._authReadyResolve();window._authReadyResolve=null;}
 });
 
-function updateAuthUI(user) {
-  const btn = document.getElementById('auth-btn');
-  const av  = document.getElementById('auth-avatar');
-  if (!btn) return;
-  if (user) {
-    btn.textContent  = 'Cikis';
-    btn.onclick      = () => signOut(auth);
-    av.style.display = 'flex';
-    av.textContent   = user.displayName ? user.displayName[0].toUpperCase() : '?';
-    av.title         = user.email;
-  } else {
-    btn.textContent  = 'Giris';
-    btn.onclick      = () => signInWithRedirect(auth, provider).catch(console.error);
-    av.style.display = 'none';
+window._authReady=new Promise(r=>{window._authReadyResolve=r;});
+
+function updateAuthUI(user){
+  const btn=document.getElementById('auth-btn');
+  const av=document.getElementById('auth-avatar');
+  if(!btn)return;
+  if(user){
+    btn.textContent='Cikis';btn.onclick=()=>signOut(auth);
+    av.style.display='flex';av.textContent=user.displayName?user.displayName[0].toUpperCase():'?';av.title=user.email;
+  }else{
+    btn.textContent='Giris';btn.onclick=()=>signInWithPopup(auth,provider).catch(console.error);
+    av.style.display='none';
   }
 }
 
-// Firebase'den ilerlemeyi cek — yunanca ile ayni mantik
-async function pullProgress() {
-  if (!currentUser) return;
-  try {
+async function pullProgress(){
+  if(!currentUser)return;
+  try{
     setSyncDot('syncing');
-    const snap = await getDoc(doc(db, 'users', currentUser.uid, 'data', 'en_progress'));
-    if (!snap.exists()) { setSyncDot('ok'); return; }
-    const remote = snap.data();
-    // Firebase'de veri varsa her zaman onu kullan (yunanca ile ayni davranis)
-    localStorage.setItem('en_v1', JSON.stringify(remote));
+    const snap=await getDoc(doc(db,'users',currentUser.uid,'data','en_progress'));
+    if(!snap.exists()){setSyncDot('ok');return;}
+    localStorage.setItem('en_v1',JSON.stringify(snap.data()));
     setSyncDot('ok');
-  } catch (e) {
-    console.error('pull:', e);
-    setSyncDot('error');
-  }
+  }catch(e){console.error('pull:',e);setSyncDot('error');}
 }
 
-// Firebase'e ilerlemeyi gonder
-window.pushProgress = function() {
-  if (!currentUser) return;
-  clearTimeout(syncTO);
-  setSyncDot('syncing');
-  syncTO = setTimeout(async () => {
-    try {
-      const data = JSON.parse(localStorage.getItem('en_v1') || '{}');
-      await setDoc(doc(db, 'users', currentUser.uid, 'data', 'en_progress'), data);
-      setSyncDot('ok');
-      setTimeout(() => setSyncDot('ready'), 2000);
-    } catch (e) {
-      console.error('push:', e);
-      setSyncDot('error');
-    }
-  }, 1500);
+window.pushProgress=function(){
+  if(!currentUser)return;
+  clearTimeout(syncTO);setSyncDot('syncing');
+  syncTO=setTimeout(async()=>{
+    try{
+      const data=JSON.parse(localStorage.getItem('en_v1')||'{}');
+      await setDoc(doc(db,'users',currentUser.uid,'data','en_progress'),data);
+      setSyncDot('ok');setTimeout(()=>setSyncDot('ready'),2000);
+    }catch(e){console.error('push:',e);setSyncDot('error');}
+  },1500);
 };
 
-function setSyncDot(state) {
-  const dot = document.getElementById('sync-dot');
-  if (!dot) return;
-  const map = { off:'var(--text3)', ready:'var(--text3)', syncing:'var(--accent)', ok:'var(--green)', error:'var(--red)' };
-  dot.style.background = map[state] || 'var(--text3)';
-  dot.title = { syncing:'Senkronize ediliyor', ok:'Senkronize edildi', error:'Sync hatasi', off:'Bulut sync', ready:'Bulut sync' }[state] || '';
+function setSyncDot(state){
+  const dot=document.getElementById('sync-dot');if(!dot)return;
+  const map={off:'var(--text3)',ready:'var(--text3)',syncing:'var(--accent)',ok:'var(--green)',error:'var(--red)'};
+  dot.style.background=map[state]||'var(--text3)';
+  dot.title={syncing:'Senkronize ediliyor',ok:'Senkronize edildi',error:'Sync hatasi',off:'Bulut sync',ready:'Bulut sync'}[state]||'';
 }
 </script>
 
@@ -662,11 +630,9 @@ function showLoadingScreen(show, msg) {
 //      - Manuel eklenen kelimeler (JSON'da olmayan) aynen korunur
 //      - JSON'da yeni gelen kelimeler level:'new' ile eklenir
 async function load() {
-  // 1. Firebase auth tamamlanana kadar bekle (pullProgress localStorage'a yazmis olacak)
-  if (window._authReady) {
-    showLoadingScreen(true, 'Hesap kontrol ediliyor...');
-    await window._authReady;
-  }
+  // 1. Firebase auth tamamlanana kadar bekle
+  showLoadingScreen(true, 'Hesap kontrol ediliyor...');
+  await window._authReady;
 
   // 2. localStorage oku (Firebase pull zaten buraya yazmis olabilir)
   try { const r=localStorage.getItem(STORE); if(r) S=JSON.parse(r); } catch(e){ console.warn('localStorage parse hatasi:',e); }
