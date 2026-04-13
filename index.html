@@ -15,10 +15,17 @@ const auth=getAuth(fbApp);
 const db=getFirestore(fbApp);
 const provider=new GoogleAuthProvider();
 let currentUser=null,syncTO=null;
-onAuthStateChanged(auth,async user=>{
+
+// UYGULAMANIN BULUTU BEKLEMESI ICIN SOZ VERIYORUZ
+window._authReady = new Promise(resolve => { window._authReadyResolve = resolve; });
+
+onAuthStateChanged(auth, async user => {
   currentUser=user;
   updateAuthUI(user);
-  if(user){await pullProgress();}
+  if(user){ await pullProgress(); }
+  
+  // BULUTTAN VERI CEKILDIKTEN SONRA UYGULAMAYA CALISMA IZNI VER
+  if(window._authReadyResolve){ window._authReadyResolve(); window._authReadyResolve=null; }
 });
 function updateAuthUI(user){
   const btn=document.getElementById('auth-btn');
@@ -628,22 +635,31 @@ let M={active:false,queue:[],idx:0,answered:false};
 const WORDS_URL='/ingilizce-kelime/kelimeler.json';
 
 async function load(){
+  showLoadingScreen(true);
+  
+  // HAYATI ONEM TASIYAN KISIM: Bulut verisinin inmesini bekle!
+  await window._authReady;
+
   // 1. Önce localStorage'daki ilerlemeyi yükle
   try{const r=localStorage.getItem(STORE);if(r)S=JSON.parse(r);}catch(e){}
-  if(!S.settings)S.settings={deckSize:10,fuzzy:1};
+  if(!S.settings)S.settings={deckSize:15,fuzzy:1};
   if(!S.stats)S.stats={streak:0,lastDate:null,totalReviews:0,dailyLog:{}};
   if(!S.stats.dailyLog)S.stats.dailyLog={};
   if(!S.monthly)S.monthly={last:null};
   if(!S.decks)S.decks=[];
+  if(typeof S.stats.totalReviews !== 'number') S.stats.totalReviews = 0;
+
   document.getElementById('set-ds').value=S.settings.deckSize;
   document.getElementById('set-fz').value=S.settings.fuzzy;
 
   // 2. Kelimeler zaten yüklüyse fetch etme
-  if(S.words&&S.words.length>0) return;
+  if(S.words&&S.words.length>0) {
+    showLoadingScreen(false);
+    return;
+  }
 
   // 3. JSON'dan kelimeleri çek
   try{
-    showLoadingScreen(true);
     const res=await fetch(WORDS_URL);
     if(!res.ok) throw new Error('HTTP '+res.status);
     const data=await res.json();
@@ -651,9 +667,13 @@ async function load(){
     // Sadece words ve decks al, istatistikleri koru
     S.words=data.words||[];
     S.decks=data.decks||[];
-    if(!S.settings.deckSize) S.settings=data.settings||{deckSize:10,fuzzy:1};
-    persist();
-    notify('500 kelime yüklendi ✓');
+    if(!S.settings.deckSize) S.settings=data.settings||{deckSize:15,fuzzy:1};
+    
+    // BURASI ONEMLI: persist() kullanmiyoruz, yoksa bulutu aninda ezer. Sadece yerel hafizaya yaziyoruz.
+    S.lastUpdated = Date.now();
+    localStorage.setItem(STORE, JSON.stringify(S));
+    
+    notify('Kelimeler yüklendi ✓');
   }catch(err){
     console.error('Kelime listesi yüklenemedi:',err);
     notify('Kelime listesi yüklenemedi. İçe Aktar ile manuel yükleyebilirsin.');
