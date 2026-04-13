@@ -55,23 +55,11 @@ async function pullProgress(){
     setSyncDot('syncing');
     const snap=await getDoc(doc(db,'users',currentUser.uid,'data','en_progress'));
     if(!snap.exists()){setSyncDot('ok');return;}
-    
-    // Verileri al ve karsilastir
-    const remote = snap.data();
-    const local = JSON.parse(localStorage.getItem('en_v1') || '{}');
-    const lr = (local.stats?.totalReviews) || 0;
-    const rr = (remote.stats?.totalReviews) || 0;
-
-    // Sadece buluttaki veri (remote), cihazdakinden (local) daha guncelse uzerine yaz
-    if(rr > lr){
-      localStorage.setItem('en_v1', JSON.stringify(remote));
-      // Eger uygulama yuklenmisse, verilerin arayuze yansimasi icin sayfayi yenile
-      if(window._appReady){ location.reload(); }
-    }
-    
+    localStorage.setItem('en_v1',JSON.stringify(snap.data()));
     setSyncDot('ok');
   }catch(e){console.error('pull:',e);setSyncDot('error');}
 }
+
 window.pushProgress=function(){
   if(!currentUser)return;
   clearTimeout(syncTO);setSyncDot('syncing');
