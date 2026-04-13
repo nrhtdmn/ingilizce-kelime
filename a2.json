@@ -1,0 +1,3416 @@
+{
+  "words": [
+    {
+      "id": "9000",
+      "deckId": "oxa2_01",
+      "word": "ability",
+      "meaning": "hüner [i.], kabiliyet [i.], yetenek [i.]"
+    },
+    {
+      "id": "9001",
+      "deckId": "oxa2_01",
+      "word": "able",
+      "meaning": "hünerli [s.], kadir [s.], gücü yeten [s.]"
+    },
+    {
+      "id": "9002",
+      "deckId": "oxa2_01",
+      "word": "abroad",
+      "meaning": "yurt dışında [zf.], gurbet [i.], yurt dışı [i.]"
+    },
+    {
+      "id": "9003",
+      "deckId": "oxa2_01",
+      "word": "accept",
+      "meaning": "kabullenmek [f.], kabul etmek [f.], almak [f.]"
+    },
+    {
+      "id": "9004",
+      "deckId": "oxa2_01",
+      "word": "accident",
+      "meaning": "rastlantı [i.], kaza [i.], beklenmedik olay [i.]"
+    },
+    {
+      "id": "9005",
+      "deckId": "oxa2_01",
+      "word": "according to",
+      "meaning": "göre [ed.], uyarınca [ed.], üzere [ed.]"
+    },
+    {
+      "id": "9006",
+      "deckId": "oxa2_01",
+      "word": "achieve",
+      "meaning": "elde etmek [f.], başarmak [f.], ulaşmak [f.]"
+    },
+    {
+      "id": "9007",
+      "deckId": "oxa2_01",
+      "word": "act",
+      "meaning": "davranmak [f.], hareket etmek [f.], eylem [i.]"
+    },
+    {
+      "id": "9008",
+      "deckId": "oxa2_01",
+      "word": "active",
+      "meaning": "faal [s.], aktif [s.], etkin [s.]"
+    },
+    {
+      "id": "9009",
+      "deckId": "oxa2_01",
+      "word": "actually",
+      "meaning": "fiilen [zf.], aslında [zf.], hem [zf.]"
+    },
+    {
+      "id": "9010",
+      "deckId": "oxa2_01",
+      "word": "adult",
+      "meaning": "yetişkin [i.], er kişi [i.], yetişkin kişi [i.]"
+    },
+    {
+      "id": "9011",
+      "deckId": "oxa2_01",
+      "word": "advantage",
+      "meaning": "avantaj [i.], fayda [i.], yarar [i.]"
+    },
+    {
+      "id": "9012",
+      "deckId": "oxa2_01",
+      "word": "adventure",
+      "meaning": "macera [i.], serüven [i.], atılmak [f.]"
+    },
+    {
+      "id": "9013",
+      "deckId": "oxa2_01",
+      "word": "advertise",
+      "meaning": "reklamını yapmak [f.], tanıtım yapmak [f.], ilan etmek [f.]"
+    },
+    {
+      "id": "9014",
+      "deckId": "oxa2_01",
+      "word": "advertisement",
+      "meaning": "reklam [i.], tanıtım [i.], duyuru [i.]"
+    },
+    {
+      "id": "9015",
+      "deckId": "oxa2_01",
+      "word": "advertising",
+      "meaning": "reklamcılık [i.], reklam [i.], ilancılık [i.]"
+    },
+    {
+      "id": "9016",
+      "deckId": "oxa2_01",
+      "word": "affect",
+      "meaning": "etkilemek [f.], tesir etmek [i.], gibi davranmak [f.]"
+    },
+    {
+      "id": "9017",
+      "deckId": "oxa2_01",
+      "word": "after",
+      "meaning": "sonra [zf.], öğleden sonra [i.], sonra gelen [s.]"
+    },
+    {
+      "id": "9018",
+      "deckId": "oxa2_01",
+      "word": "against",
+      "meaning": "aykırı [ed.], karşı [ed.], ters olarak [zf.]"
+    },
+    {
+      "id": "9019",
+      "deckId": "oxa2_01",
+      "word": "ah",
+      "meaning": "of [ünl.], ya [ünl.], vah [ünl.]"
+    },
+
+    {
+      "id": "9020",
+      "deckId": "oxa2_02",
+      "word": "airline",
+      "meaning": "hava yolu [i.], havayolu [i.], düz hat [i.]"
+    },
+    {
+      "id": "9021",
+      "deckId": "oxa2_02",
+      "word": "alive",
+      "meaning": "diri [s.], canlı [s.], sağ [s.]"
+    },
+    {
+      "id": "9022",
+      "deckId": "oxa2_02",
+      "word": "all",
+      "meaning": "tüm [i.], bütün [i.], hepsi [zm.]"
+    },
+    {
+      "id": "9023",
+      "deckId": "oxa2_02",
+      "word": "all right",
+      "meaning": "kuşkusuz ki, elbette ki, yolunda"
+    },
+    {
+      "id": "9024",
+      "deckId": "oxa2_02",
+      "word": "allow",
+      "meaning": "izin vermek [f.], müsaade etmek [f.], kabul etmek [f.]"
+    },
+    {
+      "id": "9025",
+      "deckId": "oxa2_02",
+      "word": "almost",
+      "meaning": "hemen hemen [zf.], takriben [zf.]"
+    },
+    {
+      "id": "9026",
+      "deckId": "oxa2_02",
+      "word": "alone",
+      "meaning": "yalnız [s.]"
+    },
+    {
+      "id": "9027",
+      "deckId": "oxa2_02",
+      "word": "along",
+      "meaning": "boyunca [zf.], beraberine [zf.], yanına [zf.]"
+    },
+    {
+      "id": "9028",
+      "deckId": "oxa2_02",
+      "word": "already",
+      "meaning": "zaten [zf.], çoktan [zf.], halihazırda [zf.]"
+    },
+    {
+      "id": "9029",
+      "deckId": "oxa2_02",
+      "word": "alternative",
+      "meaning": "alternatif [i.], çare [i.], şık [i.]"
+    },
+    {
+      "id": "9030",
+      "deckId": "oxa2_02",
+      "word": "although",
+      "meaning": "her ne kadar [bağ.], rağmen [bağ.], gerçi [bağ.]"
+    },
+    {
+      "id": "9031",
+      "deckId": "oxa2_02",
+      "word": "among",
+      "meaning": "arasına [ed.], arasında [ed.]"
+    },
+    {
+      "id": "9032",
+      "deckId": "oxa2_02",
+      "word": "amount",
+      "meaning": "miktar [i.], tutar [i.], meblağ [i.]"
+    },
+    {
+      "id": "9033",
+      "deckId": "oxa2_02",
+      "word": "ancient",
+      "meaning": "antik [s.], eski [s.], antika [s.]"
+    },
+    {
+      "id": "9034",
+      "deckId": "oxa2_02",
+      "word": "angrily",
+      "meaning": "hiddetle [zf.], hışımla [zf.], öfkeyle [zf.]"
+    },
+    {
+      "id": "9035",
+      "deckId": "oxa2_02",
+      "word": "ankle",
+      "meaning": "yürümek [f.], devam etmede başarısız olmak [f.]"
+    },
+    {
+      "id": "9036",
+      "deckId": "oxa2_02",
+      "word": "any",
+      "meaning": "lalettayin [s.], bazı [s.], her [s.]"
+    },
+    {
+      "id": "9037",
+      "deckId": "oxa2_02",
+      "word": "any more",
+      "meaning": "başka [zf.], daha fazla [zf.]"
+    },
+    {
+      "id": "9038",
+      "deckId": "oxa2_02",
+      "word": "anybody",
+      "meaning": "kimse [zm.], hiç kimse [zm.], herhangi biri [i.]"
+    },
+    {
+      "id": "9039",
+      "deckId": "oxa2_02",
+      "word": "anyway",
+      "meaning": "neyse [zf.], her neyse [zf.], hem [zf.]"
+    },
+
+    {
+      "id": "9040",
+      "deckId": "oxa2_03",
+      "word": "anywhere",
+      "meaning": "nerede olursa olsun [zf.], herhangi bir yer [zf.], herhangi bir yerde [zf.]"
+    },
+    { "id": "9041", "deckId": "oxa2_03", "word": "app", "meaning": "uygulama" },
+    {
+      "id": "9042",
+      "deckId": "oxa2_03",
+      "word": "appear",
+      "meaning": "belli olmak [f.], görünmek [f.], belirmek [f.]"
+    },
+    {
+      "id": "9043",
+      "deckId": "oxa2_03",
+      "word": "appearance",
+      "meaning": "dış görünüş [i.], görünüm [i.], görünüş [i.]"
+    },
+    {
+      "id": "9044",
+      "deckId": "oxa2_03",
+      "word": "apply",
+      "meaning": "uygulamak [f.], başvurmak [f.], müracaat etmek [f.]"
+    },
+    {
+      "id": "9045",
+      "deckId": "oxa2_03",
+      "word": "architect",
+      "meaning": "mimar [i.], yapmak [f.], tasarlamak [f.]"
+    },
+    {
+      "id": "9046",
+      "deckId": "oxa2_03",
+      "word": "architecture",
+      "meaning": "mimarlık [i.], inşaat [i.], yapı [i.]"
+    },
+    {
+      "id": "9047",
+      "deckId": "oxa2_03",
+      "word": "argue",
+      "meaning": "tartışmak [f.], çekişmek [f.], göstergesi olmak [f.]"
+    },
+    {
+      "id": "9048",
+      "deckId": "oxa2_03",
+      "word": "argument",
+      "meaning": "argüman [i.], tartışma [i.], sav [i.]"
+    },
+    {
+      "id": "9049",
+      "deckId": "oxa2_03",
+      "word": "army",
+      "meaning": "ordu [i.], kalabalık [i.], topluluk [i.]"
+    },
+    {
+      "id": "9050",
+      "deckId": "oxa2_03",
+      "word": "arrange",
+      "meaning": "ayarlamak [f.], düzenlemek [f.], hazırlanmak [f.]"
+    },
+    {
+      "id": "9051",
+      "deckId": "oxa2_03",
+      "word": "arrangement",
+      "meaning": "ayarlama [i.], aranjman [i.], düzenleme [i.]"
+    },
+    {
+      "id": "9052",
+      "deckId": "oxa2_03",
+      "word": "as",
+      "meaning": "olarak [zf.], gibi [ed.], dahi [zf.]"
+    },
+    {
+      "id": "9053",
+      "deckId": "oxa2_03",
+      "word": "asleep",
+      "meaning": "uyuyan [s.], tembel [s.], uyuşuk [s.]"
+    },
+    {
+      "id": "9054",
+      "deckId": "oxa2_03",
+      "word": "assistant",
+      "meaning": "muavin [i.], asistan [i.], yardımcı [s.]"
+    },
+    {
+      "id": "9055",
+      "deckId": "oxa2_03",
+      "word": "athlete",
+      "meaning": "sporcu [i.], atlet [i.]"
+    },
+    {
+      "id": "9056",
+      "deckId": "oxa2_03",
+      "word": "attack",
+      "meaning": "saldırmak [f.], hücum etmek [f.], atak [i.]"
+    },
+    {
+      "id": "9057",
+      "deckId": "oxa2_03",
+      "word": "attend",
+      "meaning": "katılmak [f.], iştirak etmek [f.], hazır bulunmak [f.]"
+    },
+    {
+      "id": "9058",
+      "deckId": "oxa2_03",
+      "word": "attention",
+      "meaning": "özen [i.], ilgilenme [i.], ilgi [1.]"
+    },
+    {
+      "id": "9059",
+      "deckId": "oxa2_03",
+      "word": "attractive",
+      "meaning": "cazibeli [s.], cazip [s.], çekici [s.]"
+    },
+
+    {
+      "id": "9060",
+      "deckId": "oxa2_04",
+      "word": "audience",
+      "meaning": "izleyiciler veya dinleyiciler topluluğu [i.], seyirci [i.], izleyici [i.]"
+    },
+    {
+      "id": "9061",
+      "deckId": "oxa2_04",
+      "word": "author",
+      "meaning": "yazar [i.], yazmak [f.], muharrir [i.]"
+    },
+    {
+      "id": "9062",
+      "deckId": "oxa2_04",
+      "word": "available",
+      "meaning": "elde hazır bulunan [s.], boş [s.], mevcut [s.]"
+    },
+    {
+      "id": "9063",
+      "deckId": "oxa2_04",
+      "word": "average",
+      "meaning": "ortalama [i.], ortalamasını bulmak [f.], belirli bir miktar tüketmek [f.]"
+    },
+    {
+      "id": "9064",
+      "deckId": "oxa2_04",
+      "word": "avoid",
+      "meaning": "önlemek [f.], kaçınmak [f.], sakınmak [f.]"
+    },
+    {
+      "id": "9065",
+      "deckId": "oxa2_04",
+      "word": "award",
+      "meaning": "ödüllendirmek [f.], ödül vermek [f.], mükafat [i.]"
+    },
+    {
+      "id": "9066",
+      "deckId": "oxa2_04",
+      "word": "awful",
+      "meaning": "berbat [s.], sunturlu [s.], müthiş [s.]"
+    },
+    {
+      "id": "9067",
+      "deckId": "oxa2_04",
+      "word": "back",
+      "meaning": "art [i.], arkalık [i.], sırt [i.]"
+    },
+    {
+      "id": "9068",
+      "deckId": "oxa2_04",
+      "word": "background",
+      "meaning": "arka plan [i.], fon [i.], ardyöre [i.]"
+    },
+    {
+      "id": "9069",
+      "deckId": "oxa2_04",
+      "word": "badly",
+      "meaning": "kötü bir şekilde [zf.], ağır [zf.], berbat bir şekilde [zf.]"
+    },
+    {
+      "id": "9070",
+      "deckId": "oxa2_04",
+      "word": "bar",
+      "meaning": "çubuk [i.], demir çubuk, baro [i.]"
+    },
+    {
+      "id": "9071",
+      "deckId": "oxa2_04",
+      "word": "baseball",
+      "meaning": "beysbol [i.], beyzbol [i.], beysbol topu [i.]"
+    },
+    {
+      "id": "9072",
+      "deckId": "oxa2_04",
+      "word": "based",
+      "meaning": "esaslı [s.], yerleşik [s.], temeli [s.]"
+    },
+    {
+      "id": "9073",
+      "deckId": "oxa2_04",
+      "word": "basketball",
+      "meaning": "basketbol [i.], basket topu [i.], sepettopu [i.]"
+    },
+    {
+      "id": "9074",
+      "deckId": "oxa2_04",
+      "word": "bean",
+      "meaning": "fasulye [i.], dost [i.], tohum [i.]"
+    },
+    {
+      "id": "9075",
+      "deckId": "oxa2_04",
+      "word": "bear",
+      "meaning": "dayanmak [f.], katlanmak [f.], taşımak [f.]"
+    },
+    {
+      "id": "9076",
+      "deckId": "oxa2_04",
+      "word": "beat",
+      "meaning": "vurmak [f.], dövmek [f.], yenmek [f.]"
+    },
+    {
+      "id": "9077",
+      "deckId": "oxa2_04",
+      "word": "beef",
+      "meaning": "dırlanmak [f.], dır dır etmek [f.], sığır eti [i.]"
+    },
+    {
+      "id": "9078",
+      "deckId": "oxa2_04",
+      "word": "before",
+      "meaning": "evvel [ed.], önce [ed.], daha önce [zf.]"
+    },
+    {
+      "id": "9079",
+      "deckId": "oxa2_04",
+      "word": "behave",
+      "meaning": "davranmak [f.], hizaya gelmek [f.]"
+    },
+
+    {
+      "id": "9080",
+      "deckId": "oxa2_05",
+      "word": "behaviour",
+      "meaning": "davranış [i.], hareket tarzı [1.]"
+    },
+    {
+      "id": "9081",
+      "deckId": "oxa2_05",
+      "word": "belong",
+      "meaning": "ait olmak [f.], uygun olmak [f.]"
+    },
+    {
+      "id": "9082",
+      "deckId": "oxa2_05",
+      "word": "belt",
+      "meaning": "kayış [i.], kuşak [i.], kemer [i.]"
+    },
+    {
+      "id": "9083",
+      "deckId": "oxa2_05",
+      "word": "benefit",
+      "meaning": "yararlanmak [f.], menfaat [i.], çıkar [i.]"
+    },
+    {
+      "id": "9084",
+      "deckId": "oxa2_05",
+      "word": "best",
+      "meaning": "en iyi [s.], geçmek [f.], baskın çıkmak [f.]"
+    },
+    {
+      "id": "9085",
+      "deckId": "oxa2_05",
+      "word": "better",
+      "meaning": "daha iyi [s.], iyileştirmek [f.], islah etmek [f.]"
+    },
+    {
+      "id": "9086",
+      "deckId": "oxa2_05",
+      "word": "between",
+      "meaning": "arasında [zf.], arasına [zf.], ortada [zf.]"
+    },
+    {
+      "id": "9087",
+      "deckId": "oxa2_05",
+      "word": "billion",
+      "meaning": "milyar [i.], bilyon [i.]"
+    },
+    {
+      "id": "9088",
+      "deckId": "oxa2_05",
+      "word": "bin",
+      "meaning": "çöp kutusu [i.], ambarlamak [f.], çöpe atmak [f.]"
+    },
+    {
+      "id": "9089",
+      "deckId": "oxa2_05",
+      "word": "biology",
+      "meaning": "dirimbilim [i.], yaşambilim [i.], biyoloji [i.]"
+    },
+    {
+      "id": "9090",
+      "deckId": "oxa2_05",
+      "word": "birth",
+      "meaning": "doğum [i.], kaynak [i.]"
+    },
+    {
+      "id": "9091",
+      "deckId": "oxa2_05",
+      "word": "biscuit",
+      "meaning": "bisküvi [i.], gevrek [i.]"
+    },
+    {
+      "id": "9092",
+      "deckId": "oxa2_05",
+      "word": "bit",
+      "meaning": "gem [i.], gemlemek [f.], ikili savmak [f.]"
+    },
+    {
+      "id": "9093",
+      "deckId": "oxa2_05",
+      "word": "blank",
+      "meaning": "boşluk [i.], boş [s.], silmek [f.]"
+    },
+    {
+      "id": "9094",
+      "deckId": "oxa2_05",
+      "word": "blood",
+      "meaning": "kan [i.], kan bağı [i.], dem [i.]"
+    },
+    {
+      "id": "9095",
+      "deckId": "oxa2_05",
+      "word": "blow",
+      "meaning": "esmek [f.], üflemek [f.], darbe [i.]"
+    },
+    {
+      "id": "9096",
+      "deckId": "oxa2_05",
+      "word": "board",
+      "meaning": "binmek [f.], tahta döşemek [f.], kurul [i.]"
+    },
+    {
+      "id": "9097",
+      "deckId": "oxa2_05",
+      "word": "boil",
+      "meaning": "haşlamak [f.], kaynamak [f.], çıban [i.]"
+    },
+    {
+      "id": "9098",
+      "deckId": "oxa2_05",
+      "word": "bone",
+      "meaning": "kılçık [i.], kemik [i.], kılçıklarını ayıklamak (balık) [f.]"
+    },
+    {
+      "id": "9099",
+      "deckId": "oxa2_05",
+      "word": "book",
+      "meaning": "ayırtmak [f.], kitap [i.], deftere işlemek [f.]"
+    },
+
+    {
+      "id": "9100",
+      "deckId": "oxa2_06",
+      "word": "borrow",
+      "meaning": "ödünç almak [f.], alıntı yapmak [f.]"
+    },
+    {
+      "id": "9101",
+      "deckId": "oxa2_06",
+      "word": "boss",
+      "meaning": "patron [i.], patronluk yapmak [f.], idare etmek [f.]"
+    },
+    {
+      "id": "9102",
+      "deckId": "oxa2_06",
+      "word": "bottom",
+      "meaning": "dip [i.], alt [i.], bir temel üzerine yerleştirmek [f.]"
+    },
+    {
+      "id": "9103",
+      "deckId": "oxa2_06",
+      "word": "bow!",
+      "meaning": "tas [i.], çanak [i.], kase [i.]"
+    },
+    {
+      "id": "9104",
+      "deckId": "oxa2_06",
+      "word": "brain",
+      "meaning": "beyin [i.], kafasına ağır bir darbe indirmek [f.], kafa yarmak [f.]"
+    },
+    {
+      "id": "9105",
+      "deckId": "oxa2_06",
+      "word": "bridge",
+      "meaning": "köprü [i.], köprü kurmak [f.], köprü yapmak [f.]"
+    },
+    {
+      "id": "9106",
+      "deckId": "oxa2_06",
+      "word": "bright",
+      "meaning": "parlak [s.], muhteşem [s.], şaşaalı [s.]"
+    },
+    {
+      "id": "9107",
+      "deckId": "oxa2_06",
+      "word": "brilliant",
+      "meaning": "nefis [s.], parlak [s.], muhteşem [s.]"
+    },
+    {
+      "id": "9108",
+      "deckId": "oxa2_06",
+      "word": "broken",
+      "meaning": "arızalı [s.], kırılmış [s.], kırık [s.]"
+    },
+    {
+      "id": "9109",
+      "deckId": "oxa2_06",
+      "word": "brush",
+      "meaning": "fırçalamak [f.], fırça [i.], süpürmek [f.]"
+    },
+    {
+      "id": "9110",
+      "deckId": "oxa2_06",
+      "word": "burn",
+      "meaning": "yakmak [f.], yanmak [f.], yaktı [f.]"
+    },
+    {
+      "id": "9111",
+      "deckId": "oxa2_06",
+      "word": "businessman",
+      "meaning": "işadamı [i.], iş insanı [i.], tüccar"
+    },
+    {
+      "id": "9112",
+      "deckId": "oxa2_06",
+      "word": "button",
+      "meaning": "düğme [i.], tuş [i.], iliklemek [f.]"
+    },
+    {
+      "id": "9113",
+      "deckId": "oxa2_06",
+      "word": "camp",
+      "meaning": "kamp yapmak [f.], kamp kurmak [f.], kamp [i.]"
+    },
+    {
+      "id": "9114",
+      "deckId": "oxa2_06",
+      "word": "camping",
+      "meaning": "kamp yapma [i.], kamp [i.], kampçılık [i.]"
+    },
+    {
+      "id": "9115",
+      "deckId": "oxa2_06",
+      "word": "can",
+      "meaning": "olabilmek [f.], kovmak [f.], konservelemek [f.]"
+    },
+    {
+      "id": "9116",
+      "deckId": "oxa2_06",
+      "word": "care",
+      "meaning": "önem vermek [f.], aldırmak [f.], umursamak [f.]"
+    },
+    {
+      "id": "9117",
+      "deckId": "oxa2_06",
+      "word": "careful",
+      "meaning": "itinalı [s.], dikkatli [s.], özenli [s.]"
+    },
+    {
+      "id": "9118",
+      "deckId": "oxa2_06",
+      "word": "carefully",
+      "meaning": "özenle [zf.], idareli biçimde [zf.], itinayla [zf.]"
+    },
+    {
+      "id": "9119",
+      "deckId": "oxa2_06",
+      "word": "carpet",
+      "meaning": "halı [i.], kaplamak [f.], azarlamak [f.]"
+    },
+
+    {
+      "id": "9120",
+      "deckId": "oxa2_07",
+      "word": "cartoon",
+      "meaning": "karikatürize etmek [f.], karikatür çizmek [f.], mizah amaçlı çizim yapmak [f.]"
+    },
+    {
+      "id": "9121",
+      "deckId": "oxa2_07",
+      "word": "case",
+      "meaning": "dava [i.], kasa [i.], kılıf [i.]"
+    },
+    {
+      "id": "9122",
+      "deckId": "oxa2_07",
+      "word": "cash",
+      "meaning": "nakit [i.], peşin para [i.], peşin [s.]"
+    },
+    {
+      "id": "9123",
+      "deckId": "oxa2_07",
+      "word": "castle",
+      "meaning": "kale [i.], kale gibi korunaklı bir yere koymak [f.], sağlam emniyete almak [f.]"
+    },
+    {
+      "id": "9124",
+      "deckId": "oxa2_07",
+      "word": "catch",
+      "meaning": "enselemek [f.], yakalamak [f.], yetişmek [f.]"
+    },
+    {
+      "id": "9125",
+      "deckId": "oxa2_07",
+      "word": "cause",
+      "meaning": "sebebiyet vermek [f.], sebep olmak [f.], yol açmak [f.]"
+    },
+    {
+      "id": "9126",
+      "deckId": "oxa2_07",
+      "word": "celebrate",
+      "meaning": "kutlamak [f.], bayram yapmak [f.], yönetmek (ayin) [f.]"
+    },
+    {
+      "id": "9127",
+      "deckId": "oxa2_07",
+      "word": "celebrity",
+      "meaning": "ünlü kişi [i.], şöhret [i.], ünlü kimse [i.]"
+    },
+    {
+      "id": "9128",
+      "deckId": "oxa2_07",
+      "word": "certain",
+      "meaning": "kesin [s.], belirli [s.], belli [s.]"
+    },
+    {
+      "id": "9129",
+      "deckId": "oxa2_07",
+      "word": "certainly",
+      "meaning": "muhakkak [zf.], kesinlikle [zf.], elbette [zf.]"
+    },
+    {
+      "id": "9130",
+      "deckId": "oxa2_07",
+      "word": "chance",
+      "meaning": "olanak [i.], ihtimal [i.], şans [i.]"
+    },
+    {
+      "id": "9131",
+      "deckId": "oxa2_07",
+      "word": "character",
+      "meaning": "karakter [i.], oymak [f.], nevi şahsına münhasır bir kimse [i.]"
+    },
+    {
+      "id": "9132",
+      "deckId": "oxa2_07",
+      "word": "charity",
+      "meaning": "hayır [i.], hayırseverlik [i.], hamiyet [i.]"
+    },
+    {
+      "id": "9133",
+      "deckId": "oxa2_07",
+      "word": "chat",
+      "meaning": "muhabbet [i.], sohbet [i.], söyleşmek [f.]"
+    },
+    {
+      "id": "9134",
+      "deckId": "oxa2_07",
+      "word": "check",
+      "meaning": "denetlemek [f.], kontrol etmek [f.], kontrol [i.]"
+    },
+    {
+      "id": "9135",
+      "deckId": "oxa2_07",
+      "word": "chef",
+      "meaning": "aşçı [i.], aşçıbaşı [i.], şef [i.]"
+    },
+    {
+      "id": "9136",
+      "deckId": "oxa2_07",
+      "word": "chemistry",
+      "meaning": "yapı [i.], madde yapısı [i.], kimya [i.]"
+    },
+    {
+      "id": "9137",
+      "deckId": "oxa2_07",
+      "word": "chip",
+      "meaning": "havalandırmak (top) [f.], takılmak [f.], kırılmak [f.]"
+    },
+    {
+      "id": "9138",
+      "deckId": "oxa2_07",
+      "word": "choice",
+      "meaning": "tercih [i.], seçenek [i.], ayırma [i.]"
+    },
+    {
+      "id": "9139",
+      "deckId": "oxa2_07",
+      "word": "church",
+      "meaning": "kilise [i.], kilisede tören yapmak [f.], kilise töreni yapmak [f.]"
+    },
+
+    {
+      "id": "9140",
+      "deckId": "oxa2_08",
+      "word": "cigarette",
+      "meaning": "sigara [i.], cigara [i.], mazot [i.]"
+    },
+    {
+      "id": "9141",
+      "deckId": "oxa2_08",
+      "word": "circle",
+      "meaning": "halka [i.], daire [i.], çember [i.]"
+    },
+    {
+      "id": "9142",
+      "deckId": "oxa2_08",
+      "word": "classical",
+      "meaning": "klasik [s.], klas [s.], eski dile ait [s.]"
+    },
+    {
+      "id": "9143",
+      "deckId": "oxa2_08",
+      "word": "clear",
+      "meaning": "belirgin [s.], açık [s.], net [s.]"
+    },
+    {
+      "id": "9144",
+      "deckId": "oxa2_08",
+      "word": "clearly",
+      "meaning": "açık bir biçimde [zf.], açıkça [zf.], ayan beyan [zf.]"
+    },
+    {
+      "id": "9145",
+      "deckId": "oxa2_08",
+      "word": "clever",
+      "meaning": "zeki [s.], akıllı [s.], cin gibi [s.]"
+    },
+    {
+      "id": "9146",
+      "deckId": "oxa2_08",
+      "word": "climate",
+      "meaning": "iklim [i.], çevre [i.], şartlar [i.]"
+    },
+    {
+      "id": "9147",
+      "deckId": "oxa2_08",
+      "word": "close",
+      "meaning": "kapamak [f.], kapatmak [f.], yakın [s.]"
+    },
+    {
+      "id": "9148",
+      "deckId": "oxa2_08",
+      "word": "closed",
+      "meaning": "kapalı [s.], yumuk [s.], kapanmış [s.]"
+    },
+    {
+      "id": "9149",
+      "deckId": "oxa2_08",
+      "word": "clothing",
+      "meaning": "giysi [i.], giyim [i.], giyim eşyası [i.]"
+    },
+    {
+      "id": "9150",
+      "deckId": "oxa2_08",
+      "word": "cloud",
+      "meaning": "bulut [i.], karartmak [f.], bozmak [f.]"
+    },
+    {
+      "id": "9151",
+      "deckId": "oxa2_08",
+      "word": "coach",
+      "meaning": "otobüs [i.], eğitmek [f.], hazırlamak [f.]"
+    },
+    {
+      "id": "9152",
+      "deckId": "oxa2_08",
+      "word": "coast",
+      "meaning": "sahil [i.], kıyı [i.], deniz kıyısı [i.]"
+    },
+    {
+      "id": "9153",
+      "deckId": "oxa2_08",
+      "word": "code",
+      "meaning": "şifrelemek [f.], kodlamak [f.], şifre [i.]"
+    },
+    {
+      "id": "9154",
+      "deckId": "oxa2_08",
+      "word": "colleague",
+      "meaning": "meslektaş [i.], görevdaş [i.], görevdeş [i.]"
+    },
+    {
+      "id": "9155",
+      "deckId": "oxa2_08",
+      "word": "collect",
+      "meaning": "toplamak [f.], biriktirmek [f.], olmak (git gide) [f.]"
+    },
+    {
+      "id": "9156",
+      "deckId": "oxa2_08",
+      "word": "column",
+      "meaning": "sütun [i.], kolon [i.], destek [i.]"
+    },
+    {
+      "id": "9157",
+      "deckId": "oxa2_08",
+      "word": "comedy",
+      "meaning": "komedi [i.], güldürü [i.], komik olaylar [i.]"
+    },
+    {
+      "id": "9158",
+      "deckId": "oxa2_08",
+      "word": "comfortable",
+      "meaning": "rahat [s.], rahatlatıcı [s.], teselli edici [s.]"
+    },
+    {
+      "id": "9159",
+      "deckId": "oxa2_08",
+      "word": "comment",
+      "meaning": "yorumlamak [f.], yorum [i.], açımlamak [f.]"
+    },
+
+    {
+      "id": "9160",
+      "deckId": "oxa2_09",
+      "word": "communicate",
+      "meaning": "haberleşmek [f.], birbirine açılmak (odalar) [f.], bulaştırmak [f.]"
+    },
+    {
+      "id": "9161",
+      "deckId": "oxa2_09",
+      "word": "community",
+      "meaning": "halk [i.], camia [i.], topluluk [i.]"
+    },
+    {
+      "id": "9162",
+      "deckId": "oxa2_09",
+      "word": "compete",
+      "meaning": "rekabet etmek [f.], yarışmak [f.], kapışmak [f.]"
+    },
+    {
+      "id": "9163",
+      "deckId": "oxa2_09",
+      "word": "competition",
+      "meaning": "müsabaka [i.], yarışma [i.], rekabet [i.]"
+    },
+    {
+      "id": "9164",
+      "deckId": "oxa2_09",
+      "word": "complain",
+      "meaning": "yakınmak [f.], şikayet etmek [f.], sızıldanmak [f.]"
+    },
+    {
+      "id": "9165",
+      "deckId": "oxa2_09",
+      "word": "completely",
+      "meaning": "büsbütün [zf.], tamamen [zf.], komple [zf.]"
+    },
+    {
+      "id": "9166",
+      "deckId": "oxa2_09",
+      "word": "condition",
+      "meaning": "şartlandırmak [f.], hal [i.], koşul [i.]"
+    },
+    {
+      "id": "9167",
+      "deckId": "oxa2_09",
+      "word": "conference",
+      "meaning": "konferans [i.], konferans yapmak [f.], müzakere [i.]"
+    },
+    {
+      "id": "9168",
+      "deckId": "oxa2_09",
+      "word": "connect",
+      "meaning": "bağlamak [f.], bağlanmak [f.], birleşmek [f.]"
+    },
+    {
+      "id": "9169",
+      "deckId": "oxa2_09",
+      "word": "connected",
+      "meaning": "bağlı [s.], alakadar [s.], akraba [s.]"
+    },
+    {
+      "id": "9170",
+      "deckId": "oxa2_09",
+      "word": "consider",
+      "meaning": "durumu değerlendirmek [f.], dikkate almak [f.], göz önünde bulundurmak [f.]"
+    },
+    {
+      "id": "9171",
+      "deckId": "oxa2_09",
+      "word": "contain",
+      "meaning": "kapsamak [f.], içermek [f.], zaptetmek [f.]"
+    },
+    {
+      "id": "9172",
+      "deckId": "oxa2_09",
+      "word": "context",
+      "meaning": "bağlam [i.], kaynak [i.], durum [i.]"
+    },
+    {
+      "id": "9173",
+      "deckId": "oxa2_09",
+      "word": "continent",
+      "meaning": "kıta [i.], anakara [i.]"
+    },
+    {
+      "id": "9174",
+      "deckId": "oxa2_09",
+      "word": "continue",
+      "meaning": "devam ettirmek [f.], sürmek [f.], sürdürmek [f.]"
+    },
+    {
+      "id": "9175",
+      "deckId": "oxa2_09",
+      "word": "control",
+      "meaning": "denetlemek [f.], kontrol etmek [f.], kontrol [i.]"
+    },
+    {
+      "id": "9176",
+      "deckId": "oxa2_09",
+      "word": "cook",
+      "meaning": "yemek pişirmek [f.], pişirmek [f.], aşçı [i.]"
+    },
+    {
+      "id": "9177",
+      "deckId": "oxa2_09",
+      "word": "cooker",
+      "meaning": "ocak [i.], fırın (mutfak aleti) [i.], fırın [i.]"
+    },
+    {
+      "id": "9178",
+      "deckId": "oxa2_09",
+      "word": "copy",
+      "meaning": "kopyalamak [f.], kopya etmek [f.], suret [i.]"
+    },
+    {
+      "id": "9179",
+      "deckId": "oxa2_09",
+      "word": "corner",
+      "meaning": "köşe [i.], yakalamak (konuşmak için) [f.], viraj almak [f.]"
+    },
+
+    {
+      "id": "9180",
+      "deckId": "oxa2_10",
+      "word": "correctly",
+      "meaning": "doğru [zf.], doğru şekilde [zf.], uygun biçimde [zf.]"
+    },
+    {
+      "id": "9181",
+      "deckId": "oxa2_10",
+      "word": "count",
+      "meaning": "saymak [f.], sayı [i.], hesaba katmak [f.]"
+    },
+    {
+      "id": "9182",
+      "deckId": "oxa2_10",
+      "word": "couple",
+      "meaning": "eşleştirmek [f.], çift [i.], birleşmek [f.]"
+    },
+    {
+      "id": "9183",
+      "deckId": "oxa2_10",
+      "word": "cover",
+      "meaning": "örtmek [f.], kaplamak [f.], kılıf [i.]"
+    },
+    {
+      "id": "9184",
+      "deckId": "oxa2_10",
+      "word": "crazy",
+      "meaning": "deli [s.], çıldırmış [s.], çılgın [s.]"
+    },
+    {
+      "id": "9185",
+      "deckId": "oxa2_10",
+      "word": "creative",
+      "meaning": "yaratıcı [s.], halik [i.], neden olan [s.]"
+    },
+    {
+      "id": "9186",
+      "deckId": "oxa2_10",
+      "word": "credit",
+      "meaning": "kredi [i.], krediyi hesabına geçirmek [f.], inanmak [f.]"
+    },
+    {
+      "id": "9187",
+      "deckId": "oxa2_10",
+      "word": "crime",
+      "meaning": "suç [i.], suçlu bulmak [f.], cezalandırmak [f.]"
+    },
+    {
+      "id": "9188",
+      "deckId": "oxa2_10",
+      "word": "criminal",
+      "meaning": "sabıkalı [i.], suçlu [s.], müthiş [s.]"
+    },
+    {
+      "id": "9189",
+      "deckId": "oxa2_10",
+      "word": "cross",
+      "meaning": "karşıya geçmek [f.], çarmıh [i.], haç [i.]"
+    },
+    {
+      "id": "9190",
+      "deckId": "oxa2_10",
+      "word": "crowd",
+      "meaning": "kalabalık [i.], üşüşmek [f.], israr etmek [f.]"
+    },
+    {
+      "id": "9191",
+      "deckId": "oxa2_10",
+      "word": "crowded",
+      "meaning": "kalabalık [s.], kalabalık (yer) [s.], dolu [s.]"
+    },
+    {
+      "id": "9192",
+      "deckId": "oxa2_10",
+      "word": "cry",
+      "meaning": "haykırmak [f.], ağlamak [f.], ağlama [i.]"
+    },
+    {
+      "id": "9193",
+      "deckId": "oxa2_10",
+      "word": "cupboard",
+      "meaning": "dolap [i.], büfe [i.], yüklük [i.]"
+    },
+    {
+      "id": "9194",
+      "deckId": "oxa2_10",
+      "word": "curly",
+      "meaning": "kıvırcık [s.], ondüle [s.]"
+    },
+    {
+      "id": "9195",
+      "deckId": "oxa2_10",
+      "word": "cycle",
+      "meaning": "devir [i.], çevrim [i.], pedal çevirmek [f.]"
+    },
+    {
+      "id": "9196",
+      "deckId": "oxa2_10",
+      "word": "daily",
+      "meaning": "günlük [s.], gündelik [s.], geçim [i.]"
+    },
+    {
+      "id": "9197",
+      "deckId": "oxa2_10",
+      "word": "danger",
+      "meaning": "tehlike [i.], risk [i.], varta [i.]"
+    },
+    {
+      "id": "9198",
+      "deckId": "oxa2_10",
+      "word": "dark",
+      "meaning": "karanlık [i.], koyu [s.], belirsizlik [i.]"
+    },
+    {
+      "id": "9199",
+      "deckId": "oxa2_10",
+      "word": "data",
+      "meaning": "veri [i.], bilgi [i.], girdi [i.]"
+    },
+
+    {
+      "id": "9200",
+      "deckId": "oxa2_11",
+      "word": "dead",
+      "meaning": "ölü [s.], cansız [s.], çok [s.]"
+    },
+    {
+      "id": "9201",
+      "deckId": "oxa2_11",
+      "word": "deal",
+      "meaning": "davranmak [f.], dağıtmak [f.], iş yapmak [f.]"
+    },
+    {
+      "id": "9202",
+      "deckId": "oxa2_11",
+      "word": "dear",
+      "meaning": "sevgili [s.], canım [ünl.], tatlı kimse [i.]"
+    },
+    {
+      "id": "9203",
+      "deckId": "oxa2_11",
+      "word": "death",
+      "meaning": "ölüm [i.], vefat [i.], katil [i.]"
+    },
+    {
+      "id": "9204",
+      "deckId": "oxa2_11",
+      "word": "decision",
+      "meaning": "karar [i.], yargı [i.], emir [i.]"
+    },
+    {
+      "id": "9205",
+      "deckId": "oxa2_11",
+      "word": "deep",
+      "meaning": "derin [s.], deniz [i.], derince [s.]"
+    },
+    {
+      "id": "9206",
+      "deckId": "oxa2_11",
+      "word": "definitely",
+      "meaning": "kesinlikle [zf.], tamamen [zf.], elbette [zf.]"
+    },
+    {
+      "id": "9207",
+      "deckId": "oxa2_11",
+      "word": "degree",
+      "meaning": "derece [i.], rütbe [i.], aşama [i.]"
+    },
+    {
+      "id": "9208",
+      "deckId": "oxa2_11",
+      "word": "dentist",
+      "meaning": "dişçi [i.], diş hekimi [i.], diş tabibi [i.]"
+    },
+    {
+      "id": "9209",
+      "deckId": "oxa2_11",
+      "word": "department",
+      "meaning": "departman [i.], daire [i.], bölüm [i.]"
+    },
+    {
+      "id": "9210",
+      "deckId": "oxa2_11",
+      "word": "depend",
+      "meaning": "bağlı olmak [f.], güvenmek [f.]"
+    },
+    {
+      "id": "9211",
+      "deckId": "oxa2_11",
+      "word": "desert",
+      "meaning": "terk etmek [f.], çöl [i.], ıssız [s.]"
+    },
+    {
+      "id": "9212",
+      "deckId": "oxa2_11",
+      "word": "designer",
+      "meaning": "tasarımcı [i.], dekoratör [i.]"
+    },
+    {
+      "id": "9213",
+      "deckId": "oxa2_11",
+      "word": "destroy",
+      "meaning": "tahrip etmek [f.], imha etmek [f.], kül etmek [f.]"
+    },
+    {
+      "id": "9214",
+      "deckId": "oxa2_11",
+      "word": "detective",
+      "meaning": "dedektif [i.], hafiye [i.], polis hafiyesi [i.]"
+    },
+    {
+      "id": "9215",
+      "deckId": "oxa2_11",
+      "word": "develop",
+      "meaning": "geliştirmek [f.], gelişmek [f.], yıkamak (film) [f.]"
+    },
+    {
+      "id": "9216",
+      "deckId": "oxa2_11",
+      "word": "device",
+      "meaning": "cihaz [i.], alet [i.], nişan [i.]"
+    },
+    {
+      "id": "9217",
+      "deckId": "oxa2_11",
+      "word": "diary",
+      "meaning": "günlük [i.], hatıra defteri [i.], günce [i.]"
+    },
+    {
+      "id": "9218",
+      "deckId": "oxa2_11",
+      "word": "differently",
+      "meaning": "farklı olarak [zf.], başka şekilde [zf.], farklı biçimde [zf.]"
+    },
+    {
+      "id": "9219",
+      "deckId": "oxa2_11",
+      "word": "digital",
+      "meaning": "dijital [s.], tuş [i.], parmağa ait [s.]"
+    },
+
+    {
+      "id": "9220",
+      "deckId": "oxa2_12",
+      "word": "direct",
+      "meaning": "yönlendirmek [f.], yöneltmek [f.], yönetmek [f.]"
+    },
+    {
+      "id": "9221",
+      "deckId": "oxa2_12",
+      "word": "direction",
+      "meaning": "istikamet [i.], doğrultu [i.], yön [i.]"
+    },
+    {
+      "id": "9222",
+      "deckId": "oxa2_12",
+      "word": "director",
+      "meaning": "yönetici [i.], yönetmen [i.], müdür [i.]"
+    },
+    {
+      "id": "9223",
+      "deckId": "oxa2_12",
+      "word": "disagree",
+      "meaning": "aynı fikirde olmamak [f.], sürtüşmek [f.]"
+    },
+    {
+      "id": "9224",
+      "deckId": "oxa2_12",
+      "word": "disappear",
+      "meaning": "ortadan kaybolmak [f.], yok olmak [f.], gözden kaybolmak [f.]"
+    },
+    {
+      "id": "9225",
+      "deckId": "oxa2_12",
+      "word": "disaster",
+      "meaning": "facia [i.], felaket [i.], afet [i.]"
+    },
+    {
+      "id": "9226",
+      "deckId": "oxa2_12",
+      "word": "discover",
+      "meaning": "keşfetmek [f.], çıkarmak [f.], anlamak [f.]"
+    },
+    {
+      "id": "9227",
+      "deckId": "oxa2_12",
+      "word": "discovery",
+      "meaning": "buluş [i.], bulgu [i.], keşif [i.]"
+    },
+    {
+      "id": "9228",
+      "deckId": "oxa2_12",
+      "word": "discussion",
+      "meaning": "tartışma [i.], müzakere [i.], bahis [i.]"
+    },
+    {
+      "id": "9229",
+      "deckId": "oxa2_12",
+      "word": "disease",
+      "meaning": "hastalık [i.], dert [i.], illet [i.]"
+    },
+    {
+      "id": "9230",
+      "deckId": "oxa2_12",
+      "word": "distance",
+      "meaning": "mesafe [i.], uzaklık [i.], geride bırakmak [f.]"
+    },
+    {
+      "id": "9231",
+      "deckId": "oxa2_12",
+      "word": "divorced",
+      "meaning": "ayrılmış [s.], boşanmış [s.]"
+    },
+    {
+      "id": "9232",
+      "deckId": "oxa2_12",
+      "word": "document",
+      "meaning": "doküman [i.], belge [i.], kanıtlamak [f.]"
+    },
+    {
+      "id": "9233",
+      "deckId": "oxa2_12",
+      "word": "double",
+      "meaning": "iki misli yapmak [f.], ikiye katlamak [f.], iki kat [i.]"
+    },
+    {
+      "id": "9234",
+      "deckId": "oxa2_12",
+      "word": "download",
+      "meaning": "indirmek [f.], yüklemek [f.], karşıdan yüklemek [f.]"
+    },
+    {
+      "id": "9235",
+      "deckId": "oxa2_12",
+      "word": "downstairs",
+      "meaning": "aşağı katta [i.], altkat [i.], alt kat [i.]"
+    },
+    {
+      "id": "9236",
+      "deckId": "oxa2_12",
+      "word": "drama",
+      "meaning": "piyes [i.], dramatik özellik [i.], dramatik durum [i.]"
+    },
+    {
+      "id": "9237",
+      "deckId": "oxa2_12",
+      "word": "drawing",
+      "meaning": "çizme [i.], çekme [i.], çizim [i.]"
+    },
+    {
+      "id": "9238",
+      "deckId": "oxa2_12",
+      "word": "dream",
+      "meaning": "rüya görmek [f.], hayal kurmak [f.], hayal [i.]"
+    },
+    {
+      "id": "9239",
+      "deckId": "oxa2_12",
+      "word": "drive",
+      "meaning": "sürmek [f.], araba sürmek [f.], dürtü [i.]"
+    },
+
+    {
+      "id": "9240",
+      "deckId": "oxa2_13",
+      "word": "driving",
+      "meaning": "sürme [i.], sevk [i.], sürücü [i.]"
+    },
+    {
+      "id": "9241",
+      "deckId": "oxa2_13",
+      "word": "drop",
+      "meaning": "düşmek [f.], düşürmek [f.], düşüş [i.]"
+    },
+    {
+      "id": "9242",
+      "deckId": "oxa2_13",
+      "word": "drug",
+      "meaning": "ilaç [i.], uyuşturmak [f.], ilaç vermek [f.]"
+    },
+    {
+      "id": "9243",
+      "deckId": "oxa2_13",
+      "word": "dry",
+      "meaning": "kurulamak [f.], kurutmak [f.], kurumak [f.]"
+    },
+    {
+      "id": "9244",
+      "deckId": "oxa2_13",
+      "word": "earn",
+      "meaning": "para kazanmak [f.], kazanmak [f.], kazandırmak [f.]"
+    },
+    {
+      "id": "9245",
+      "deckId": "oxa2_13",
+      "word": "earth",
+      "meaning": "kara [i.], yeryüzü [i.], zemin [i.]"
+    },
+    {
+      "id": "9246",
+      "deckId": "oxa2_13",
+      "word": "easily",
+      "meaning": "rahatlıkla [zf.], rahatça [zf.], kolayca [zf.]"
+    },
+    {
+      "id": "9247",
+      "deckId": "oxa2_13",
+      "word": "education",
+      "meaning": "öğretim [i.], eğitim [i.], öğrenim [i.]"
+    },
+    {
+      "id": "9248",
+      "deckId": "oxa2_13",
+      "word": "effect",
+      "meaning": "tesir [i.], etki [i.], sonuca vardırmak [f.]"
+    },
+    {
+      "id": "9249",
+      "deckId": "oxa2_13",
+      "word": "either",
+      "meaning": "iki [i.], her [s.], her iki [s.]"
+    },
+    {
+      "id": "9250",
+      "deckId": "oxa2_13",
+      "word": "electric",
+      "meaning": "elektrik [s.], elektrikli [s.], elektro [i.]"
+    },
+    {
+      "id": "9251",
+      "deckId": "oxa2_13",
+      "word": "electrical",
+      "meaning": "elektrik [s.], elektrikli [s.], elektro [s.]"
+    },
+    {
+      "id": "9252",
+      "deckId": "oxa2_13",
+      "word": "electricity",
+      "meaning": "elektrik [i.], cereyan [i.], çıngı [i.]"
+    },
+    {
+      "id": "9253",
+      "deckId": "oxa2_13",
+      "word": "electronic",
+      "meaning": "elektronik [s.], elektronik, elektronsal"
+    },
+    {
+      "id": "9254",
+      "deckId": "oxa2_13",
+      "word": "employ",
+      "meaning": "işe almak [f.], çalıştırmak [f.], kullanmak [f.]"
+    },
+    {
+      "id": "9255",
+      "deckId": "oxa2_13",
+      "word": "employee",
+      "meaning": "işçi [i.], eleman [i.], çalışan [i.]"
+    },
+    {
+      "id": "9256",
+      "deckId": "oxa2_13",
+      "word": "employer",
+      "meaning": "işveren [i.], patron [i.]"
+    },
+    {
+      "id": "9257",
+      "deckId": "oxa2_13",
+      "word": "empty",
+      "meaning": "boşaltmak [f.], boş [s.], tahliye etmek [f.]"
+    },
+    {
+      "id": "9258",
+      "deckId": "oxa2_13",
+      "word": "ending",
+      "meaning": "bitiş [i.], sona erme [i.], nihayet [i.]"
+    },
+    {
+      "id": "9259",
+      "deckId": "oxa2_13",
+      "word": "energy",
+      "meaning": "enerji [i.], kuvvet [i.], derman [i.]"
+    },
+    {
+      "id": "9260",
+      "deckId": "oxa2_14",
+      "word": "raise",
+      "meaning": "büyütmek (çocuk) [f.], artırmak [f.], yükseltmek [f.]"
+    },
+    {
+      "id": "9261",
+      "deckId": "oxa2_14",
+      "word": "promise",
+      "meaning": "söz [i.], söz vermek [f.], vadetmek [f.]"
+    },
+    {
+      "id": "9262",
+      "deckId": "oxa2_14",
+      "word": "pronounce",
+      "meaning": "telaffuz etmek [f.], ileri sürmek [f.], ilan etmek [f.]"
+    },
+    {
+      "id": "9263",
+      "deckId": "oxa2_14",
+      "word": "protect",
+      "meaning": "muhafaza etmek [f.], korumak [f.], himaye etmek [f.]"
+    },
+    {
+      "id": "9264",
+      "deckId": "oxa2_14",
+      "word": "provide",
+      "meaning": "temin etmek [f.], sağlamlamak [f.], donatmak [f.]"
+    },
+    {
+      "id": "9265",
+      "deckId": "oxa2_14",
+      "word": "pub",
+      "meaning": "taverna [i.], meyhane [i.], birahane [i.]"
+    },
+    {
+      "id": "9266",
+      "deckId": "oxa2_14",
+      "word": "public",
+      "meaning": "halk [i.], kamu [s.], umumi [s.]"
+    },
+    {
+      "id": "9267",
+      "deckId": "oxa2_14",
+      "word": "publish",
+      "meaning": "yayımlamak [f.], yayınlamak [f.], kamuoyuna açıklamak [f.]"
+    },
+    {
+      "id": "9268",
+      "deckId": "oxa2_14",
+      "word": "pull",
+      "meaning": "kalkmak (araba) [f.], çekmek [f.], hareket etmek [f.]"
+    },
+    {
+      "id": "9269",
+      "deckId": "oxa2_14",
+      "word": "purpose",
+      "meaning": "gaye [i.], amaç [i.], maksat [i.]"
+    },
+    {
+      "id": "9270",
+      "deckId": "oxa2_14",
+      "word": "push",
+      "meaning": "itelemek [f.], itmek [f.], kakmak [f.]"
+    },
+    {
+      "id": "9271",
+      "deckId": "oxa2_14",
+      "word": "quality",
+      "meaning": "kaliteli [s.], kalite [i.], nitelik [i.]"
+    },
+    {
+      "id": "9272",
+      "deckId": "oxa2_14",
+      "word": "quantity",
+      "meaning": "nicelik [i.], miktar [i.], bolluk [i.]"
+    },
+    {
+      "id": "9273",
+      "deckId": "oxa2_14",
+      "word": "queen",
+      "meaning": "kraliçe yapmak [f.], kraliçe [i.], ece [i.]"
+    },
+    {
+      "id": "9274",
+      "deckId": "oxa2_14",
+      "word": "question",
+      "meaning": "sorgulamak [f.], sorular sormak [f.], soru [i.]"
+    },
+    {
+      "id": "9275",
+      "deckId": "oxa2_14",
+      "word": "quietly",
+      "meaning": "usulcacık [zf.], sessizce [zf.], usul [zf.]"
+    },
+    {
+      "id": "9276",
+      "deckId": "oxa2_14",
+      "word": "race",
+      "meaning": "irk [i.], yarışmak [f.], yarış [i.]"
+    },
+    {
+      "id": "9277",
+      "deckId": "oxa2_14",
+      "word": "railway",
+      "meaning": "şimendifer [i.], tren yolu [i.], tren [i.]"
+    },
+    {
+      "id": "9278",
+      "deckId": "oxa2_14",
+      "word": "rate",
+      "meaning": "oran [i.], kur [i.], addetmek [f.]"
+    },
+    {
+      "id": "9279",
+      "deckId": "oxa2_14",
+      "word": "rather",
+      "meaning": "tercihen [zf.], epey [zf.], oldukça [zf.]"
+    },
+
+    {
+      "id": "9280",
+      "deckId": "oxa2_15",
+      "word": "reach",
+      "meaning": "ulaşmak [f.], ermek [f.], erişmek [f.]"
+    },
+    {
+      "id": "9281",
+      "deckId": "oxa2_15",
+      "word": "react",
+      "meaning": "tepki vermek [f.], tepkimek [f.], tepki göstermek [f.]"
+    },
+    {
+      "id": "9282",
+      "deckId": "oxa2_15",
+      "word": "realize",
+      "meaning": "gerçekleştirmek [f.], farketmek [f.], farkına varmak [f.]"
+    },
+    {
+      "id": "9283",
+      "deckId": "oxa2_15",
+      "word": "receive",
+      "meaning": "almak [f.], teslim almak [f.], anlamak [f.]"
+    },
+    {
+      "id": "9284",
+      "deckId": "oxa2_15",
+      "word": "recent",
+      "meaning": "yeni [s.], son [s.], taze [s.]"
+    },
+    {
+      "id": "9285",
+      "deckId": "oxa2_15",
+      "word": "recently",
+      "meaning": "son zamanlarda [zf.], geçenlerde [zf.], son dönemlerde [zf.]"
+    },
+    {
+      "id": "9286",
+      "deckId": "oxa2_15",
+      "word": "reception",
+      "meaning": "alış [i.], çekme/sinyal [i.], resepsiyon [i.]"
+    },
+    {
+      "id": "9287",
+      "deckId": "oxa2_15",
+      "word": "recipe",
+      "meaning": "yöntem [i.], yemek [i.], yemek tarifi [i.]"
+    },
+    {
+      "id": "9288",
+      "deckId": "oxa2_15",
+      "word": "recognize",
+      "meaning": "haklı bulmak [f.], tanımak [f.], bilmek [f.]"
+    },
+    {
+      "id": "9289",
+      "deckId": "oxa2_15",
+      "word": "recommend",
+      "meaning": "salık vermek [f.], önermek [f.], tavsiye etmek [f.]"
+    },
+    {
+      "id": "9290",
+      "deckId": "oxa2_15",
+      "word": "record",
+      "meaning": "kaydetmek [f.], sicil [i.], plak [i.]"
+    },
+    {
+      "id": "9291",
+      "deckId": "oxa2_15",
+      "word": "recording",
+      "meaning": "yazıcı [i.], kayıt [i.]"
+    },
+    {
+      "id": "9292",
+      "deckId": "oxa2_15",
+      "word": "recycle",
+      "meaning": "geri dönüşümünü sağlamak [f.], değerlendirmek [f.], geri dönüştürmek [f.]"
+    },
+    {
+      "id": "9293",
+      "deckId": "oxa2_15",
+      "word": "reduce",
+      "meaning": "dönüştürmek [f.], yerine oturtmak [f.], kırmak (fiyat) [f.]"
+    },
+    {
+      "id": "9294",
+      "deckId": "oxa2_15",
+      "word": "refer",
+      "meaning": "anmak [f.], kastetmek [f.], bahsetmek [f.]"
+    },
+    {
+      "id": "9295",
+      "deckId": "oxa2_15",
+      "word": "refuse",
+      "meaning": "geri çevirmek [f.], reddetmek [f.], imtina etmek [f.]"
+    },
+    {
+      "id": "9296",
+      "deckId": "oxa2_15",
+      "word": "region",
+      "meaning": "bölge [i.], yöre [i.], ülke [i.]"
+    },
+    {
+      "id": "9297",
+      "deckId": "oxa2_15",
+      "word": "regular",
+      "meaning": "muntazam [s.], düzenli [s.], müdavim [i.]"
+    },
+    {
+      "id": "9298",
+      "deckId": "oxa2_15",
+      "word": "relationship",
+      "meaning": "ilişki [i.], bağlantı [i.], münasebet [i.]"
+    },
+    {
+      "id": "9299",
+      "deckId": "oxa2_15",
+      "word": "remove",
+      "meaning": "kaldırmak [f.], sökmek [f.], gidermek [f.]"
+    },
+
+    {
+      "id": "9300",
+      "deckId": "oxa2_16",
+      "word": "repair",
+      "meaning": "tamir etmek [f.], onarmak [f.], onarım [i.]"
+    },
+    {
+      "id": "9301",
+      "deckId": "oxa2_16",
+      "word": "replace",
+      "meaning": "yer değiştirmek [f.], yerine geçmek [f.], yenisiyle değiştirmek [f.]"
+    },
+    {
+      "id": "9302",
+      "deckId": "oxa2_16",
+      "word": "report",
+      "meaning": "rapor etmek [f.], ihbar etmek [f.], haber vermek [f.]"
+    },
+    {
+      "id": "9303",
+      "deckId": "oxa2_16",
+      "word": "reporter",
+      "meaning": "raportör [i.], muhbir [i.], muhabir [i.]"
+    },
+    {
+      "id": "9304",
+      "deckId": "oxa2_16",
+      "word": "reply",
+      "meaning": "cevap [i.], yanıtlamak [f.], yanıt [i.]"
+    },
+    {
+      "id": "9305",
+      "deckId": "oxa2_16",
+      "word": "request",
+      "meaning": "istem [i.], rica etmek [f.], talep etmek [f.]"
+    },
+    {
+      "id": "9306",
+      "deckId": "oxa2_16",
+      "word": "research",
+      "meaning": "incelemek [f.], araştırmak [f.], araştırma yapmak [f.]"
+    },
+    {
+      "id": "9307",
+      "deckId": "oxa2_16",
+      "word": "researcher",
+      "meaning": "araştırıcı [i.], araştırmacı [i.], araştırma görevlisi [i.]"
+    },
+    {
+      "id": "9308",
+      "deckId": "oxa2_16",
+      "word": "respond",
+      "meaning": "karşılık vermek [f.], yanıt vermek [f.], yanıtlamak [f.]"
+    },
+    {
+      "id": "9309",
+      "deckId": "oxa2_16",
+      "word": "response",
+      "meaning": "yanıt [i.], karşılık [i.], cevap [i.]"
+    },
+    {
+      "id": "9310",
+      "deckId": "oxa2_16",
+      "word": "rest",
+      "meaning": "dinlenmek [f.], dinlenme [i.], dinlendirmek [f.]"
+    },
+    {
+      "id": "9311",
+      "deckId": "oxa2_16",
+      "word": "review",
+      "meaning": "teftiş etmek [f.], yeniden gözatmak [f.], gözden geçirmek [f.]"
+    },
+    {
+      "id": "9312",
+      "deckId": "oxa2_16",
+      "word": "ride",
+      "meaning": "gezinti [i.], binmek [f.]"
+    },
+    {
+      "id": "9313",
+      "deckId": "oxa2_16",
+      "word": "ring",
+      "meaning": "çalmak (telefon/zil) [f.], halka [i.], yüzük [i.]"
+    },
+    {
+      "id": "9314",
+      "deckId": "oxa2_16",
+      "word": "rise",
+      "meaning": "yükseliş [i.], yükselmek [f.], doğmak [f.]"
+    },
+    {
+      "id": "9315",
+      "deckId": "oxa2_16",
+      "word": "rock",
+      "meaning": "şok etmek [f.], sallanmak [f.], kaya [i.]"
+    },
+    {
+      "id": "9316",
+      "deckId": "oxa2_16",
+      "word": "role",
+      "meaning": "rol [i.], sıfat [i.], rol yapmak [f.]"
+    },
+    {
+      "id": "9317",
+      "deckId": "oxa2_16",
+      "word": "roof",
+      "meaning": "çatı yapmak [f.], çatı [i.], üstünü kapamak [f.]"
+    },
+    {
+      "id": "9318",
+      "deckId": "oxa2_16",
+      "word": "round",
+      "meaning": "yuvarlak [s.], bitirmek [f.]"
+    },
+    {
+      "id": "9319",
+      "deckId": "oxa2_16",
+      "word": "route",
+      "meaning": "dönmek [f.], güzergah [i.], rota [i.]"
+    },
+
+    {
+      "id": "9320",
+      "deckId": "oxa2_17",
+      "word": "rubbish",
+      "meaning": "sevk etmek [f.], çöp [i.], zırva [i.]"
+    },
+    {
+      "id": "9321",
+      "deckId": "oxa2_17",
+      "word": "rude",
+      "meaning": "palavra [i.], kaba [s.], nezaketsiz [s.]"
+    },
+    {
+      "id": "9322",
+      "deckId": "oxa2_17",
+      "word": "run",
+      "meaning": "çalıştırmak [f.], işletmek [f.], koşmak [f.]"
+    },
+    {
+      "id": "9323",
+      "deckId": "oxa2_17",
+      "word": "runner",
+      "meaning": "yarışçı [i.], yarış atı [i.], haberci [i.]"
+    },
+    {
+      "id": "9324",
+      "deckId": "oxa2_17",
+      "word": "running",
+      "meaning": "çalışma [i.], koşma [i.], işletme [i.]"
+    },
+    {
+      "id": "9325",
+      "deckId": "oxa2_17",
+      "word": "sadly",
+      "meaning": "üzüntülü bir şekilde [zf.], hüzünle [zf.], çok [zf.]"
+    },
+    {
+      "id": "9326",
+      "deckId": "oxa2_17",
+      "word": "safe",
+      "meaning": "güvenilir [s.], emniyette [s.], kasa [i.]"
+    },
+    {
+      "id": "9327",
+      "deckId": "oxa2_17",
+      "word": "sail",
+      "meaning": "yelken [i.], denize açılmak [f.], yelkenli [i.]"
+    },
+    {
+      "id": "9328",
+      "deckId": "oxa2_17",
+      "word": "sailing",
+      "meaning": "deniz yolculuğu [i.], yelken sporu [i.], denize açılma [i.]"
+    },
+    {
+      "id": "9329",
+      "deckId": "oxa2_17",
+      "word": "salary",
+      "meaning": "maaş vermek [f.], aylık [i.], maaş [i.]"
+    },
+    {
+      "id": "9330",
+      "deckId": "oxa2_17",
+      "word": "sale",
+      "meaning": "açık artırma ile satış [i.], ucuzluk [i.], satış [i.]"
+    },
+    {
+      "id": "9331",
+      "deckId": "oxa2_17",
+      "word": "sauce",
+      "meaning": "sos koymak [f.], sos [i.], terbiyelemek [f.]"
+    },
+    {
+      "id": "9332",
+      "deckId": "oxa2_17",
+      "word": "save",
+      "meaning": "kurtarmak [f.], biriktirmek [f.]"
+    },
+    {
+      "id": "9333",
+      "deckId": "oxa2_17",
+      "word": "scared",
+      "meaning": "korkmuş [s.]"
+    },
+    {
+      "id": "9334",
+      "deckId": "oxa2_17",
+      "word": "scary",
+      "meaning": "korkunç [s.], korkutucu [s.], ürkütücü [s.]"
+    },
+    {
+      "id": "9335",
+      "deckId": "oxa2_17",
+      "word": "scene",
+      "meaning": "manzara [i.], olay yeri [i.], sahne [i.]"
+    },
+    {
+      "id": "9336",
+      "deckId": "oxa2_17",
+      "word": "schedule",
+      "meaning": "program [i.], tarifeye geçirmek [f.], plan [i.]"
+    },
+    {
+      "id": "9337",
+      "deckId": "oxa2_17",
+      "word": "score",
+      "meaning": "skor [i.], puan [i.], hesaplaşmak [f.]"
+    },
+    {
+      "id": "9338",
+      "deckId": "oxa2_17",
+      "word": "screen",
+      "meaning": "göstermek [f.], siper etmek [f.], ekran [i.]"
+    },
+    {
+      "id": "9339",
+      "deckId": "oxa2_17",
+      "word": "search",
+      "meaning": "aramak [f.], araştırmak [f.], araştırma [i.]"
+    },
+
+    {
+      "id": "9340",
+      "deckId": "oxa2_18",
+      "word": "season",
+      "meaning": "mevsim [i.], sezon [i.], baharatını katmak [f.]"
+    },
+    {
+      "id": "9341",
+      "deckId": "oxa2_18",
+      "word": "seat",
+      "meaning": "koltuk [i.], oturtmak [f.], oturacak yer [i.]"
+    },
+    {
+      "id": "9342",
+      "deckId": "oxa2_18",
+      "word": "secondly",
+      "meaning": "ikinci olarak [zf.], saniyen [zf.]"
+    },
+    {
+      "id": "9343",
+      "deckId": "oxa2_18",
+      "word": "secret",
+      "meaning": "gizli [s.], sır [i.], gizem [i.]"
+    },
+    {
+      "id": "9344",
+      "deckId": "oxa2_18",
+      "word": "secretary",
+      "meaning": "yazman [i.], yazı masası [i.], sekreter [i.]"
+    },
+    {
+      "id": "9345",
+      "deckId": "oxa2_18",
+      "word": "seem",
+      "meaning": "gözükmek [f.], görünmek [f.]"
+    },
+    {
+      "id": "9346",
+      "deckId": "oxa2_18",
+      "word": "sense",
+      "meaning": "algı [i.], algılamak [f.], hissetmek [f.]"
+    },
+    {
+      "id": "9347",
+      "deckId": "oxa2_18",
+      "word": "separate",
+      "meaning": "ayırmak [f.], ayrı [s.], ayrıştırmak [f.]"
+    },
+    {
+      "id": "9348",
+      "deckId": "oxa2_18",
+      "word": "series",
+      "meaning": "seri [i.], dizi [i.], zincir [i.]"
+    },
+    {
+      "id": "9349",
+      "deckId": "oxa2_18",
+      "word": "serious",
+      "meaning": "ağır [s.], ağırbaşlı [s.], ciddi [s.]"
+    },
+    {
+      "id": "9350",
+      "deckId": "oxa2_18",
+      "word": "serve",
+      "meaning": "tapmak [f.], hizmet etmek [f.]"
+    },
+    {
+      "id": "9351",
+      "deckId": "oxa2_18",
+      "word": "service",
+      "meaning": "müşteriye bakmak [f.], hizmet [i.], servis [i.]"
+    },
+    {
+      "id": "9352",
+      "deckId": "oxa2_18",
+      "word": "several",
+      "meaning": "birçok [s.], çeşitli [s.], ayrı [s.]"
+    },
+    {
+      "id": "9353",
+      "deckId": "oxa2_18",
+      "word": "shake",
+      "meaning": "sallanmak [f.], sallamak [f.], titremek [f.]"
+    },
+    {
+      "id": "9354",
+      "deckId": "oxa2_18",
+      "word": "shall",
+      "meaning": "gelecek zaman yardımcı fiili [f.], söz verme [f.], kaçınılmazlık [f.]"
+    },
+    {
+      "id": "9355",
+      "deckId": "oxa2_18",
+      "word": "shape",
+      "meaning": "şekil vermek [f.], şekillendirmek [f.], biçim vermek [f.]"
+    },
+    {
+      "id": "9356",
+      "deckId": "oxa2_18",
+      "word": "sheet",
+      "meaning": "levha [i.], kaplamak [f.], çarşaf [i.]"
+    },
+    {
+      "id": "9357",
+      "deckId": "oxa2_18",
+      "word": "ship",
+      "meaning": "kürekleri içeri almak [f.], gemi [i.], mal yüklemek [f.]"
+    },
+    {
+      "id": "9358",
+      "deckId": "oxa2_18",
+      "word": "shoulder",
+      "meaning": "üstüne almak [f.], omuz [i.], omuz vurmak [f.]"
+    },
+    {
+      "id": "9359",
+      "deckId": "oxa2_18",
+      "word": "shout",
+      "meaning": "bağırmak [f.], haykırmak [f.], haykırış [i.]"
+    },
+
+    {
+      "id": "9360",
+      "deckId": "oxa2_19",
+      "word": "shut",
+      "meaning": "kapamak [f.], kapatmak [f.], kapalı [s.]"
+    },
+    {
+      "id": "9361",
+      "deckId": "oxa2_19",
+      "word": "side",
+      "meaning": "kenar [i.], taraf [i.], yan [s.]"
+    },
+    {
+      "id": "9362",
+      "deckId": "oxa2_19",
+      "word": "sign",
+      "meaning": "alamet [i.], imzalamak [f.], imza atmak [f.]"
+    },
+    {
+      "id": "9363",
+      "deckId": "oxa2_19",
+      "word": "silver",
+      "meaning": "gümüş [s.], ağarmak [f.], sırlamak [f.]"
+    },
+    {
+      "id": "9364",
+      "deckId": "oxa2_19",
+      "word": "simple",
+      "meaning": "sade [s.], yalın [s.], basit [s.]"
+    },
+    {
+      "id": "9365",
+      "deckId": "oxa2_19",
+      "word": "since",
+      "meaning": "ondan sonra [zf.], o zamandan beri [zf.], sonradan [zf.]"
+    },
+    {
+      "id": "9366",
+      "deckId": "oxa2_19",
+      "word": "singing",
+      "meaning": "şan [i.], uğultu [i.], ötüş [i.]"
+    },
+    {
+      "id": "9367",
+      "deckId": "oxa2_19",
+      "word": "single",
+      "meaning": "bekar [s.], tek [s.], ayırmak [f.]"
+    },
+    {
+      "id": "9368",
+      "deckId": "oxa2_19",
+      "word": "sir",
+      "meaning": "sör diye hitap etmek [f.], asalet unvanı [i.], efendim [i.]"
+    },
+    {
+      "id": "9369",
+      "deckId": "oxa2_19",
+      "word": "site",
+      "meaning": "yerleştirmek [f.], oturtmak [f.], açmak [f.]"
+    },
+    {
+      "id": "9370",
+      "deckId": "oxa2_19",
+      "word": "size",
+      "meaning": "büyüklük [i.], ölçü [i.], boyut [i.]"
+    },
+    {
+      "id": "9371",
+      "deckId": "oxa2_19",
+      "word": "ski",
+      "meaning": "kayak [i.], kaymak [f.], kayak yapmak [f.]"
+    },
+    {
+      "id": "9372",
+      "deckId": "oxa2_19",
+      "word": "skiing",
+      "meaning": "kayak [i.], kayakçılık [i.], kayak yapma [i.]"
+    },
+    {
+      "id": "9373",
+      "deckId": "oxa2_19",
+      "word": "skin",
+      "meaning": "soymak [f.], ten [i.], cilt [i.]"
+    },
+    {
+      "id": "9374",
+      "deckId": "oxa2_19",
+      "word": "sky",
+      "meaning": "gök [i.], gökyüzü [i.], yükseğe atmak [f.]"
+    },
+    {
+      "id": "9375",
+      "deckId": "oxa2_19",
+      "word": "sleep",
+      "meaning": "uyumak [f.], uyku [i.]"
+    },
+    {
+      "id": "9376",
+      "deckId": "oxa2_19",
+      "word": "slowly",
+      "meaning": "yavaş yavaş [zf.], yavaşça [zf.]"
+    },
+    {
+      "id": "9377",
+      "deckId": "oxa2_19",
+      "word": "smell",
+      "meaning": "koklamak [f.], kokmak [f.], koku [i.]"
+    },
+    {
+      "id": "9378",
+      "deckId": "oxa2_19",
+      "word": "smile",
+      "meaning": "gülümsemek [f.], gülücük yapmak [f.]"
+    },
+    {
+      "id": "9379",
+      "deckId": "oxa2_19",
+      "word": "smoke",
+      "meaning": "sigara içmek [f.], duman [i.], duman tütmek [f.]"
+    },
+
+    {
+      "id": "9380",
+      "deckId": "oxa2_20",
+      "word": "smoking",
+      "meaning": "sigara içme [i.], sigara kullanımı [i.], dumanlama [i.]"
+    },
+    {
+      "id": "9381",
+      "deckId": "oxa2_20",
+      "word": "soap",
+      "meaning": "sabun [i.], tv/radyo melodram dizisi [i.], açmalık [i.]"
+    },
+    {
+      "id": "9382",
+      "deckId": "oxa2_20",
+      "word": "soccer",
+      "meaning": "futbol [i.], ayaktopu [i.]"
+    },
+    {
+      "id": "9383",
+      "deckId": "oxa2_20",
+      "word": "social",
+      "meaning": "sosyal [s.], sokulgan [s.], toplumsal [s.]"
+    },
+    {
+      "id": "9384",
+      "deckId": "oxa2_20",
+      "word": "society",
+      "meaning": "toplum [i.], dernek [i.], cemiyet [i.]"
+    },
+    {
+      "id": "9385",
+      "deckId": "oxa2_20",
+      "word": "sock",
+      "meaning": "çorap [i.], tokat atmak [f.], tokatlamak [f.]"
+    },
+    {
+      "id": "9386",
+      "deckId": "oxa2_20",
+      "word": "soft",
+      "meaning": "cıvık [s.], yumuşak [s.], bir [s.]"
+    },
+    {
+      "id": "9387",
+      "deckId": "oxa2_20",
+      "word": "soldier",
+      "meaning": "asker [i.], askerlik yapmak [f.]"
+    },
+    {
+      "id": "9388",
+      "deckId": "oxa2_20",
+      "word": "solution",
+      "meaning": "çözelti [i.], çözüm [i.], mahlul [i.]"
+    },
+    {
+      "id": "9389",
+      "deckId": "oxa2_20",
+      "word": "solve",
+      "meaning": "çözmek [f.], halletmek [f.], içinden çıkmak [f.]"
+    },
+    {
+      "id": "9390",
+      "deckId": "oxa2_20",
+      "word": "somewhere",
+      "meaning": "bir yere [zf.], yerde [zf.], bir yer [zm.]"
+    },
+    {
+      "id": "9391",
+      "deckId": "oxa2_20",
+      "word": "sort",
+      "meaning": "sıralamak [f.], sınıflandırmak [f.], cins [i.]"
+    },
+    {
+      "id": "9392",
+      "deckId": "oxa2_20",
+      "word": "source",
+      "meaning": "kaynak [i.], köken [i.], edinmek [f.]"
+    },
+    {
+      "id": "9393",
+      "deckId": "oxa2_20",
+      "word": "speaker",
+      "meaning": "hoparlör [i.], konuşmacı [i.], hatip [i.]"
+    },
+    {
+      "id": "9394",
+      "deckId": "oxa2_20",
+      "word": "specific",
+      "meaning": "belirli [s.], özgül [s.], özel [s.]"
+    },
+    {
+      "id": "9395",
+      "deckId": "oxa2_20",
+      "word": "speech",
+      "meaning": "konuşma [i.], söylev [i.], konuşma yeteneği [i.]"
+    },
+    {
+      "id": "9396",
+      "deckId": "oxa2_20",
+      "word": "speed",
+      "meaning": "hız [i.]"
+    },
+    {
+      "id": "9397",
+      "deckId": "oxa2_20",
+      "word": "spider",
+      "meaning": "örümcek [i.], istavroz dişlisi [i.]"
+    },
+    {
+      "id": "9398",
+      "deckId": "oxa2_20",
+      "word": "spoon",
+      "meaning": "kaşık [i.], oynaşmak [f.]"
+    },
+    {
+      "id": "9399",
+      "deckId": "oxa2_20",
+      "word": "square",
+      "meaning": "meydan [i.], kare [s.], kare kare yapmak [f.]"
+    },
+
+    {
+      "id": "9400",
+      "deckId": "oxa2_21",
+      "word": "stage",
+      "meaning": "sahneye koymak [f.], sahnelemek [f.], evre [i.]"
+    },
+    {
+      "id": "9401",
+      "deckId": "oxa2_21",
+      "word": "stair",
+      "meaning": "merdiven basamağı [i.], basamak [i.]"
+    },
+    {
+      "id": "9402",
+      "deckId": "oxa2_21",
+      "word": "stamp",
+      "meaning": "damga vurmak [f.], kaşe [i.], damga [i.]"
+    },
+    {
+      "id": "9403",
+      "deckId": "oxa2_21",
+      "word": "star",
+      "meaning": "yıldız [i.], yıldızlarla süslemek [f.], başrolde oynatmak [f.]"
+    },
+    {
+      "id": "9404",
+      "deckId": "oxa2_21",
+      "word": "start",
+      "meaning": "başlamak [f.], başlatmak [f.], başlangıç [i.]"
+    },
+    {
+      "id": "9405",
+      "deckId": "oxa2_21",
+      "word": "state",
+      "meaning": "ifade etmek [f.], bildirmek [f.], belirtmek [f.]"
+    },
+    {
+      "id": "9406",
+      "deckId": "oxa2_21",
+      "word": "stay",
+      "meaning": "kalmak [f.], kalma süresi [i.], kalma [i.]"
+    },
+    {
+      "id": "9407",
+      "deckId": "oxa2_21",
+      "word": "steal",
+      "meaning": "aşırmak [f.], hırsızlık yapmak [f.], çalmak [f.]"
+    },
+    {
+      "id": "9408",
+      "deckId": "oxa2_21",
+      "word": "step",
+      "meaning": "üvey [i.], adım [i.], basamak [i.]"
+    },
+    {
+      "id": "9409",
+      "deckId": "oxa2_21",
+      "word": "stomach",
+      "meaning": "mide [i.], sindirmek [f.], hazmetmek [f.]"
+    },
+    {
+      "id": "9410",
+      "deckId": "oxa2_21",
+      "word": "stone",
+      "meaning": "taş [i.], çekirdeğini çıkarmak [f.], taşa tutmak [f.]"
+    },
+    {
+      "id": "9411",
+      "deckId": "oxa2_21",
+      "word": "store",
+      "meaning": "depolamak [f.], mağaza [i.], depo [i.]"
+    },
+    {
+      "id": "9412",
+      "deckId": "oxa2_21",
+      "word": "storm",
+      "meaning": "fırtına [i.], bağırıp çağırmak [f.], öfkeli bir halde gitmek [f.]"
+    },
+    {
+      "id": "9413",
+      "deckId": "oxa2_21",
+      "word": "straight",
+      "meaning": "düzgün [s.], doğru [s.], düz [s.]"
+    },
+    {
+      "id": "9414",
+      "deckId": "oxa2_21",
+      "word": "strange",
+      "meaning": "garip [s.], yabancı [s.], tuhaf [s.]"
+    },
+    {
+      "id": "9415",
+      "deckId": "oxa2_21",
+      "word": "strategy",
+      "meaning": "strateji [i.], savaş bilimi [i.], taktik [i.]"
+    },
+    {
+      "id": "9416",
+      "deckId": "oxa2_21",
+      "word": "stress",
+      "meaning": "stres [i.], tonlamak [f.], baskı yapmak [f.]"
+    },
+    {
+      "id": "9417",
+      "deckId": "oxa2_21",
+      "word": "structure",
+      "meaning": "yapılandırmak [f.], yapı [i.], bünye [i.]"
+    },
+    {
+      "id": "9418",
+      "deckId": "oxa2_21",
+      "word": "stupid",
+      "meaning": "aptalca [s.], beyinsiz [s.], salak [s.]"
+    },
+    {
+      "id": "9419",
+      "deckId": "oxa2_21",
+      "word": "succeed",
+      "meaning": "başarılı olmak [f.], başarmak [f.], başarıya ulaşmak [f.]"
+    },
+
+    {
+      "id": "9420",
+      "deckId": "oxa2_22",
+      "word": "successful",
+      "meaning": "başarılı [s.], başarıya ulaşan şey [s.], muvaffak [s.]"
+    },
+    {
+      "id": "9421",
+      "deckId": "oxa2_22",
+      "word": "such",
+      "meaning": "çok [s.], böylesine [s.], bu gibi [s.]"
+    },
+    {
+      "id": "9422",
+      "deckId": "oxa2_22",
+      "word": "suddenly",
+      "meaning": "birdenbire [zf.], birden [zf.], aniden [zf.]"
+    },
+    {
+      "id": "9423",
+      "deckId": "oxa2_22",
+      "word": "suggest",
+      "meaning": "önermek [f.], meydana atmak [f.], tavsiye etmek [f.]"
+    },
+    {
+      "id": "9424",
+      "deckId": "oxa2_22",
+      "word": "suggestion",
+      "meaning": "telkin [i.], öneri [i.], telkin etme [i.]"
+    },
+    {
+      "id": "9425",
+      "deckId": "oxa2_22",
+      "word": "suit",
+      "meaning": "uygun olmak [f.], uymak [f.], uygun gelmek [f.]"
+    },
+    {
+      "id": "9426",
+      "deckId": "oxa2_22",
+      "word": "support",
+      "meaning": "desteklemek [f.], destek [i.], yardım etmek [f.]"
+    },
+    {
+      "id": "9427",
+      "deckId": "oxa2_22",
+      "word": "suppose",
+      "meaning": "farz etmek [f.], sanmak [f.], varsaymak [f.]"
+    },
+    {
+      "id": "9428",
+      "deckId": "oxa2_22",
+      "word": "sure",
+      "meaning": "emin [s.], elbette [zf.], soruşturmak [f.]"
+    },
+    {
+      "id": "9429",
+      "deckId": "oxa2_22",
+      "word": "surprise",
+      "meaning": "şaşırtmak [f.], şaşkınlık [i.], sürpriz [i.]"
+    },
+    {
+      "id": "9430",
+      "deckId": "oxa2_22",
+      "word": "surprised",
+      "meaning": "şaşırmış [s.], hayret etmiş [f.], şaşmış [s.]"
+    },
+    {
+      "id": "9431",
+      "deckId": "oxa2_22",
+      "word": "surprising",
+      "meaning": "şaşırtıcı [s.], şaşılası [s.], hayret verici [s.]"
+    },
+    {
+      "id": "9432",
+      "deckId": "oxa2_22",
+      "word": "survey",
+      "meaning": "araştırma [i.], anket [i.], göz gezdirmek [f.]"
+    },
+    {
+      "id": "9433",
+      "deckId": "oxa2_22",
+      "word": "sweet",
+      "meaning": "tatlı [i.], zevk [i.], tatlı şey [i.]"
+    },
+    {
+      "id": "9434",
+      "deckId": "oxa2_22",
+      "word": "symbol",
+      "meaning": "sembol [i.], amaç [i.], remzi [i.]"
+    },
+    {
+      "id": "9435",
+      "deckId": "oxa2_22",
+      "word": "system",
+      "meaning": "sistem [i.], kaide [i.]"
+    },
+    {
+      "id": "9436",
+      "deckId": "oxa2_22",
+      "word": "tablet",
+      "meaning": "tablet [i.], sıkıt yapmak [f.]"
+    },
+    {
+      "id": "9437",
+      "deckId": "oxa2_22",
+      "word": "talk",
+      "meaning": "konuşmak [f.], konuşma [i.]"
+    },
+    {
+      "id": "9438",
+      "deckId": "oxa2_22",
+      "word": "target",
+      "meaning": "hedef [i.], gaye [i.]"
+    },
+    {
+      "id": "9439",
+      "deckId": "oxa2_22",
+      "word": "task",
+      "meaning": "görev [i.], vazife [i.], ödev [i.]"
+    },
+
+    {
+      "id": "9440",
+      "deckId": "oxa2_23",
+      "word": "taste",
+      "meaning": "tatmak [f.], tat [i.], lezzet [i.]"
+    },
+    {
+      "id": "9441",
+      "deckId": "oxa2_23",
+      "word": "teaching",
+      "meaning": "öğretmenlik [i.], öğretme [i.], öğretim [i.]"
+    },
+    {
+      "id": "9442",
+      "deckId": "oxa2_23",
+      "word": "technology",
+      "meaning": "teknoloji [i.], uygulayımbilim [i.], mühendislik bilgisi [i.]"
+    },
+    {
+      "id": "9443",
+      "deckId": "oxa2_23",
+      "word": "teenage",
+      "meaning": "13 19 yaş arası [i.], gençlere ait [s.]"
+    },
+    {
+      "id": "9444",
+      "deckId": "oxa2_23",
+      "word": "temperature",
+      "meaning": "sıcaklık [i.], ısı derecesi [i.], ısı [1.]"
+    },
+    {
+      "id": "9445",
+      "deckId": "oxa2_23",
+      "word": "term",
+      "meaning": "isimlendirmek [f.], terim [i.], dönem [i.]"
+    },
+    {
+      "id": "9446",
+      "deckId": "oxa2_23",
+      "word": "themselves",
+      "meaning": "kendileri [zm.], kendilerini [zm.], kendilerine [zm.]"
+    },
+    {
+      "id": "9447",
+      "deckId": "oxa2_23",
+      "word": "thick",
+      "meaning": "kalın [s.], en heyecanlı yeri [i.], kalınlık [i.]"
+    },
+    {
+      "id": "9448",
+      "deckId": "oxa2_23",
+      "word": "thief",
+      "meaning": "hırsız [i.]"
+    },
+    {
+      "id": "9449",
+      "deckId": "oxa2_23",
+      "word": "thin",
+      "meaning": "inceltmek [f.], zayıflamak [f.], ince [s.]"
+    },
+    {
+      "id": "9450",
+      "deckId": "oxa2_23",
+      "word": "thinking",
+      "meaning": "düşünme [i.], düşünen [s.], düşünüş [i.]"
+    },
+    {
+      "id": "9451",
+      "deckId": "oxa2_23",
+      "word": "third",
+      "meaning": "üçte bir [i.], üçüncü [s.], üçüncü olarak [zf.]"
+    },
+    {
+      "id": "9452",
+      "deckId": "oxa2_23",
+      "word": "thought",
+      "meaning": "sanı [i.], düşünce [i.], fikir [i.]"
+    },
+    {
+      "id": "9453",
+      "deckId": "oxa2_23",
+      "word": "throw",
+      "meaning": "fırlatmak [f.], atmak [f.], atış [i.]"
+    },
+    {
+      "id": "9454",
+      "deckId": "oxa2_23",
+      "word": "tidy",
+      "meaning": "düzenli [s.], derli toplu [s.], toparlamak [f.]"
+    },
+    {
+      "id": "9455",
+      "deckId": "oxa2_23",
+      "word": "tie",
+      "meaning": "bağlamak [f.], bağ [i.], alaka [i.]"
+    },
+    {
+      "id": "9456",
+      "deckId": "oxa2_23",
+      "word": "tip",
+      "meaning": "bahşiş [i.], uç [i.], dokunmak [f.]"
+    },
+    {
+      "id": "9457",
+      "deckId": "oxa2_23",
+      "word": "tool",
+      "meaning": "alet [i.], araç [i.], aletle işlemek [f.]"
+    },
+    {
+      "id": "9458",
+      "deckId": "oxa2_23",
+      "word": "top",
+      "meaning": "tepe [i.], baş [i.], üst [i.]"
+    },
+    {
+      "id": "9459",
+      "deckId": "oxa2_23",
+      "word": "touch",
+      "meaning": "ellemek [f.], dokunmak [f.], değmek [f.]"
+    },
+
+    {
+      "id": "9460",
+      "deckId": "oxa2_24",
+      "word": "tour",
+      "meaning": "gezmek [f.], gezi [i.], tur [i.]"
+    },
+    {
+      "id": "9461",
+      "deckId": "oxa2_24",
+      "word": "tourism",
+      "meaning": "turizm [i.], gezim [i.]"
+    },
+    {
+      "id": "9462",
+      "deckId": "oxa2_24",
+      "word": "towards",
+      "meaning": "doğru [zf.], karşı [zf.], -e doğru [zf.]"
+    },
+    {
+      "id": "9463",
+      "deckId": "oxa2_24",
+      "word": "towel",
+      "meaning": "havlu [i.], havlu ile kurulamak [f.], kurulamak [f.]"
+    },
+    {
+      "id": "9464",
+      "deckId": "oxa2_24",
+      "word": "tower",
+      "meaning": "kule [i.], yükselmek [f.], kale gibi yükselmek [f.]"
+    },
+    {
+      "id": "9465",
+      "deckId": "oxa2_24",
+      "word": "toy",
+      "meaning": "oyuncak [i.], oynamak [f.], eğlenmek [f.]"
+    },
+    {
+      "id": "9466",
+      "deckId": "oxa2_24",
+      "word": "track",
+      "meaning": "izlemek [f.], iz [i.]"
+    },
+    {
+      "id": "9467",
+      "deckId": "oxa2_24",
+      "word": "tradition",
+      "meaning": "gelenek [i.], hadis [i.], adet [i.]"
+    },
+    {
+      "id": "9468",
+      "deckId": "oxa2_24",
+      "word": "traditional",
+      "meaning": "geleneksel [s.], ananevi [s.], göreneksel [s.]"
+    },
+    {
+      "id": "9469",
+      "deckId": "oxa2_24",
+      "word": "train",
+      "meaning": "eğitim vermek [f.], eğitmek [f.], tren [i.]"
+    },
+    {
+      "id": "9470",
+      "deckId": "oxa2_24",
+      "word": "trainer",
+      "meaning": "eğitimci [i.], eğitici [i.], antrenör [i.]"
+    },
+    {
+      "id": "9471",
+      "deckId": "oxa2_24",
+      "word": "training",
+      "meaning": "eğitim [i.], alıştırma [i.], idman [i.]"
+    },
+    {
+      "id": "9472",
+      "deckId": "oxa2_24",
+      "word": "transport",
+      "meaning": "taşımak [f.], nakletmek [f.], nakil [i.]"
+    },
+    {
+      "id": "9473",
+      "deckId": "oxa2_24",
+      "word": "traveller",
+      "meaning": "seyahat eden kimse [i.], gezgin [i.], yolcu [i.]"
+    },
+    {
+      "id": "9474",
+      "deckId": "oxa2_24",
+      "word": "trouble",
+      "meaning": "sorun [i.], dert [i.], zahmet [i.]"
+    },
+    {
+      "id": "9475",
+      "deckId": "oxa2_24",
+      "word": "truck",
+      "meaning": "kamyon [i.], takas etmek [f.], trampa etmek [f.]"
+    },
+    {
+      "id": "9476",
+      "deckId": "oxa2_24",
+      "word": "twin",
+      "meaning": "ikiz [i.], ikiz doğurmak [f.], eşleşmek [f.]"
+    },
+    {
+      "id": "9477",
+      "deckId": "oxa2_24",
+      "word": "typical",
+      "meaning": "tipik [s.], özgün [s.]"
+    },
+    {
+      "id": "9478",
+      "deckId": "oxa2_24",
+      "word": "underground",
+      "meaning": "yeraltı [i.], toprakaltı [i.], yeraltı geçidi [i.]"
+    },
+    {
+      "id": "9479",
+      "deckId": "oxa2_24",
+      "word": "understanding",
+      "meaning": "kavrayış [i.], anlama [i.], anlayış [i.]"
+    },
+
+    {
+      "id": "9480",
+      "deckId": "oxa2_25",
+      "word": "unfortunately",
+      "meaning": "maalesef [zf.], aksi gibi [zf.]"
+    },
+    {
+      "id": "9481",
+      "deckId": "oxa2_25",
+      "word": "unhappy",
+      "meaning": "mutsuz [s.], keyifsiz [s.], şanssız [s.]"
+    },
+    {
+      "id": "9482",
+      "deckId": "oxa2_25",
+      "word": "uniform",
+      "meaning": "forma [i.], üniforma [i.], yeknesak [s.]"
+    },
+    {
+      "id": "9483",
+      "deckId": "oxa2_25",
+      "word": "unit",
+      "meaning": "birim [i.], ünite [i.], bir [i.]"
+    },
+    {
+      "id": "9484",
+      "deckId": "oxa2_25",
+      "word": "united",
+      "meaning": "birleşmiş [s.], birleştirilmiş [s.], birleşik [s.]"
+    },
+    {
+      "id": "9485",
+      "deckId": "oxa2_25",
+      "word": "unusual",
+      "meaning": "alışılmadık [s.], olağan olmayan [s.], olağandışı [s.]"
+    },
+    {
+      "id": "9486",
+      "deckId": "oxa2_25",
+      "word": "upstairs",
+      "meaning": "üst kat [i.], yukarı kat [i.]"
+    },
+    {
+      "id": "9487",
+      "deckId": "oxa2_25",
+      "word": "use",
+      "meaning": "kullanmak [f.], kullanım [i.], kullanma [i.]"
+    },
+    {
+      "id": "9488",
+      "deckId": "oxa2_25",
+      "word": "used to",
+      "meaning": "alışık [s.], alışkın [s.]"
+    },
+    {
+      "id": "9489",
+      "deckId": "oxa2_25",
+      "word": "user",
+      "meaning": "kullanıcı [i.], kullanımcı [i.], tüketici [i.]"
+    },
+    {
+      "id": "9490",
+      "deckId": "oxa2_25",
+      "word": "usual",
+      "meaning": "olağan [s.], alelade [s.], alışılagelmiş [s.]"
+    },
+    {
+      "id": "9491",
+      "deckId": "oxa2_25",
+      "word": "valley",
+      "meaning": "vadi [i.], çatı oluğu [i.], dere [i.]"
+    },
+    {
+      "id": "9492",
+      "deckId": "oxa2_25",
+      "word": "van",
+      "meaning": "kamyonet [i.], elebaşı [i.], kanat [i.]"
+    },
+    {
+      "id": "9493",
+      "deckId": "oxa2_25",
+      "word": "variety",
+      "meaning": "çeşitlilik [i.], çeşit [i.], sosis [i.]"
+    },
+    {
+      "id": "9494",
+      "deckId": "oxa2_25",
+      "word": "vehicle",
+      "meaning": "araç [i.], taşıt [i.], vasıta [i.]"
+    },
+    {
+      "id": "9495",
+      "deckId": "oxa2_25",
+      "word": "view",
+      "meaning": "incelemek [f.], görüş [i.], bakış [i.]"
+    },
+    {
+      "id": "9496",
+      "deckId": "oxa2_25",
+      "word": "virus",
+      "meaning": "virüs [i.]"
+    },
+    {
+      "id": "9497",
+      "deckId": "oxa2_25",
+      "word": "voice",
+      "meaning": "ses [i.], ses tellerini titreştirerek oluşturmak [f.], dile getirmek [f.]"
+    },
+    {
+      "id": "9498",
+      "deckId": "oxa2_25",
+      "word": "wait",
+      "meaning": "beklemek [f.], bekleyiş [i.], bekleme [i.]"
+    },
+    {
+      "id": "9499",
+      "deckId": "oxa2_25",
+      "word": "war",
+      "meaning": "harp [i.], savaş [i.], savaş halinde olmak [f.]"
+    },
+
+    {
+      "id": "9500",
+      "deckId": "oxa2_26",
+      "word": "wash",
+      "meaning": "yıkanmak [f.], yıkanma [i.], yıkamak [f.]"
+    },
+    {
+      "id": "9501",
+      "deckId": "oxa2_26",
+      "word": "washing",
+      "meaning": "aşındırmak [f.], yıkama [i.], bulaşık yıkama [i.]"
+    },
+    {
+      "id": "9502",
+      "deckId": "oxa2_26",
+      "word": "wave",
+      "meaning": "dalgalanmak [f.], el sallamak [f.], dalga [i.]"
+    },
+    {
+      "id": "9503",
+      "deckId": "oxa2_26",
+      "word": "weak",
+      "meaning": "halsiz [s.], cılız [s.], güçsüz [s.]"
+    },
+    {
+      "id": "9504",
+      "deckId": "oxa2_26",
+      "word": "web",
+      "meaning": "etrafına ağ çekmek [f.], örümcek ağı [i.], anahtar dili [i.]"
+    },
+    {
+      "id": "9505",
+      "deckId": "oxa2_26",
+      "word": "wedding",
+      "meaning": "nikah [i.], düğün [i.], evlenme [i.]"
+    },
+    {
+      "id": "9506",
+      "deckId": "oxa2_26",
+      "word": "weight",
+      "meaning": "ağırlık yapmak [f.], sıklet [i.], ağırlık [i.]"
+    },
+    {
+      "id": "9507",
+      "deckId": "oxa2_26",
+      "word": "welcome",
+      "meaning": "hoş geldiniz [ünl.], hoş geldin [ünl.], hoş karşılamak [f.]"
+    },
+    {
+      "id": "9508",
+      "deckId": "oxa2_26",
+      "word": "wet",
+      "meaning": "ıslatmak [f.], ıslak [s.], yaş [s.]"
+    },
+    {
+      "id": "9509",
+      "deckId": "oxa2_26",
+      "word": "wheel",
+      "meaning": "çark [i.], tekerlek [i.], gitmek (tekerlekli bir araç) [f.]"
+    },
+    {
+      "id": "9510",
+      "deckId": "oxa2_26",
+      "word": "while",
+      "meaning": "sırasında [bağ.], iken [bağ.], olduğu halde [bağ.]"
+    },
+    {
+      "id": "9511",
+      "deckId": "oxa2_26",
+      "word": "whole",
+      "meaning": "tam [s.], bütün [s.], tüm [s.]"
+    },
+    {
+      "id": "9512",
+      "deckId": "oxa2_26",
+      "word": "whose",
+      "meaning": "kimin [zm.]"
+    },
+    {
+      "id": "9513",
+      "deckId": "oxa2_26",
+      "word": "wide",
+      "meaning": "geniş [s.], bol [s.], engin [s.]"
+    },
+    {
+      "id": "9514",
+      "deckId": "oxa2_26",
+      "word": "wild",
+      "meaning": "yaban [i.], vahşi [s.], yabani [s.]"
+    },
+    {
+      "id": "9515",
+      "deckId": "oxa2_26",
+      "word": "wind",
+      "meaning": "sarmak [f.], dolamak [f.], yel [i.]"
+    },
+    {
+      "id": "9516",
+      "deckId": "oxa2_26",
+      "word": "winner",
+      "meaning": "galip [i.], kazanan [i.], ganyan [i.]"
+    },
+    {
+      "id": "9517",
+      "deckId": "oxa2_26",
+      "word": "wish",
+      "meaning": "dilemek [f.], temenni etmek [f.], arzu [i.]"
+    },
+    {
+      "id": "9518",
+      "deckId": "oxa2_26",
+      "word": "wood",
+      "meaning": "odun [i.], tahta [i.], ahşap [i.]"
+    },
+    {
+      "id": "9519",
+      "deckId": "oxa2_26",
+      "word": "wooden",
+      "meaning": "ahşap [s.], odun [s.], ağaçlı [s.]"
+    },
+
+    {
+      "id": "9520",
+      "deckId": "oxa2_27",
+      "word": "working",
+      "meaning": "çalışma [i.], işleme tarzı [i.], temel [i.]"
+    },
+    {
+      "id": "9521",
+      "deckId": "oxa2_27",
+      "word": "worried",
+      "meaning": "endişeli [s.], kaygılı [s.], endişelenmiş [s.]"
+    },
+    {
+      "id": "9522",
+      "deckId": "oxa2_27",
+      "word": "worry",
+      "meaning": "endişelenmek [f.], üzülmek [f.], merak etmek [f.]"
+    },
+    {
+      "id": "9523",
+      "deckId": "oxa2_27",
+      "word": "worse",
+      "meaning": "daha kötüsü [i.], daha da kötüsü [i.], beter [s.]"
+    },
+    {
+      "id": "9524",
+      "deckId": "oxa2_27",
+      "word": "worst",
+      "meaning": "yenmek [f.], en kötü [s.], en fena [s.]"
+    },
+    {
+      "id": "9525",
+      "deckId": "oxa2_27",
+      "word": "wow",
+      "meaning": "birisini çok etkilemek ve heyecanlandırmak [f.], vay be [ünl.]"
+    },
+    {
+      "id": "9526",
+      "deckId": "oxa2_27",
+      "word": "yet",
+      "meaning": "henüz [zf.], gerçi [zf.], yine de [zf.]"
+    },
+    {
+      "id": "9527",
+      "deckId": "oxa2_27",
+      "word": "yours",
+      "meaning": "seninki [zm.], sizinki [zm.], sizin [zm.]"
+    },
+    {
+      "id": "9528",
+      "deckId": "oxa2_27",
+      "word": "zero",
+      "meaning": "sıfır [i.], sıfırlamak [f.], yazının sıfır derecesi [i.]"
+    }
+  ],
+  "decks": [
+    {
+      "id": "oxa2_01",
+      "name": "Oxford A2 · Deste 1 (Ability - Ah)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "active"
+    },
+    {
+      "id": "oxa2_02",
+      "name": "Oxford A2 · Deste 2 (Airline - Anyway)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_03",
+      "name": "Oxford A2 · Deste 3 (Anywhere - Attractive)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_04",
+      "name": "Oxford A2 · Deste 4 (Audience - Behave)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_05",
+      "name": "Oxford A2 · Deste 5 (Behaviour - Book)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_06",
+      "name": "Oxford A2 · Deste 6 (Borrow - Carpet)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_07",
+      "name": "Oxford A2 · Deste 7 (Cartoon - Church)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_08",
+      "name": "Oxford A2 · Deste 8 (Cigarette - Comment)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_09",
+      "name": "Oxford A2 · Deste 9 (Communicate - Corner)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_10",
+      "name": "Oxford A2 · Deste 10 (Correctly - Data)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_11",
+      "name": "Oxford A2 · Deste 11 (Dead - Digital)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_12",
+      "name": "Oxford A2 · Deste 12 (Direct - Drive)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_13",
+      "name": "Oxford A2 · Deste 13 (Driving - Energy)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_14",
+      "name": "Oxford A2 · Deste 14 (Raise - Rather)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_15",
+      "name": "Oxford A2 · Deste 15 (Reach - Remove)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_16",
+      "name": "Oxford A2 · Deste 16 (Repair - Route)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_17",
+      "name": "Oxford A2 · Deste 17 (Rubbish - Search)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_18",
+      "name": "Oxford A2 · Deste 18 (Season - Shout)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_19",
+      "name": "Oxford A2 · Deste 19 (Shut - Smoke)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_20",
+      "name": "Oxford A2 · Deste 20 (Smoking - Square)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_21",
+      "name": "Oxford A2 · Deste 21 (Stage - Succeed)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_22",
+      "name": "Oxford A2 · Deste 22 (Successful - Task)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_23",
+      "name": "Oxford A2 · Deste 23 (Taste - Touch)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_24",
+      "name": "Oxford A2 · Deste 24 (Tour - Understanding)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_25",
+      "name": "Oxford A2 · Deste 25 (Unfortunately - War)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_26",
+      "name": "Oxford A2 · Deste 26 (Wash - Wooden)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    },
+    {
+      "id": "oxa2_27",
+      "name": "Oxford A2 · Deste 27 (Working - Zero)",
+      "level": "A2",
+      "createdDate": "2026-04-13",
+      "completedDate": null,
+      "status": "locked"
+    }
+  ]
+}
