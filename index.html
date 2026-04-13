@@ -39,11 +39,11 @@ async function pullProgress(){
     const snap=await getDoc(doc(db,'users',currentUser.uid,'data','progress_nd'));
     if(!snap.exists())return;
     const remote=snap.data();
-    const local=JSON.parse(localStorage.getItem('yds_v5')||'{}');
+    const local=JSON.parse(localStorage.getItem('yds_nd_v5')||'{}');
     const lr=(local.stats?.totalReviews)||0;
     const rr=(remote.stats?.totalReviews)||0;
     if(rr>lr){
-      localStorage.setItem('yds_v5',JSON.stringify(remote));
+      localStorage.setItem('yds_nd_v5',JSON.stringify(remote));
       if(window._appReady){location.reload();}
     }
     document.getElementById('sync-dot').style.background='var(--green)';
@@ -54,7 +54,7 @@ window.pushProgress=function(){
   clearTimeout(syncTO);
   syncTO=setTimeout(async()=>{
     try{
-      const data=JSON.parse(localStorage.getItem('yds_v5')||'{}');
+      const data=JSON.parse(localStorage.getItem('yds_nd_v5')||'{}');
       await setDoc(doc(db,'users',currentUser.uid,'data','progress_nd'),data);
       const dot=document.getElementById('sync-dot');
       dot.style.background='var(--green)';
@@ -600,7 +600,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 </style>
 
 <script>
-const STORE='yds_v5';
+const STORE='yds_nd_v5';
 const INTERVALS=[1,2,4,7,14,30];
 
 let S={words:[],decks:[],settings:{deckSize:15,fuzzy:1},stats:{streak:0,lastDate:null,totalReviews:0,dailyLog:{}},monthly:{last:null}};
