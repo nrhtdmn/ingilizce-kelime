@@ -27,19 +27,19 @@ const fbApp    = initializeApp(FB_CFG);
 const auth     = getAuth(fbApp);
 const db       = getFirestore(fbApp);
 const provider = new GoogleAuthProvider();
-let syncTO     = null;
+let currentUser = null, syncTO = null;
 
 // Auth durumu netlesince bu Promise resolve edilir — load() bunu bekler
 window._authReady = new Promise(resolve => {
   onAuthStateChanged(auth, async user => {
-    window._currentUser = user || null;
+    currentUser = user || null;
+    window._currentUser = currentUser; // geriye donuk uyumluluk
     updateAuthUI(user);
     if (user) {
-      // Firebase'den cek, localStorage'a yaz, sonra resolve et
       await pullProgress();
     }
     setSyncDot(user ? 'ready' : 'off');
-    resolve(); // artik load() devam edebilir
+    resolve();
   });
 });
 
@@ -60,24 +60,16 @@ function updateAuthUI(user) {
   }
 }
 
-// Firebase'den ilerlemeyi cek
-// Her zaman Firebase'i esas alir — giriş yapilmissa ilerleme oradan gelir
+// Firebase'den ilerlemeyi cek — yunanca ile ayni mantik
 async function pullProgress() {
-  const user = window._currentUser;
-  if (!user) return;
+  if (!currentUser) return;
   try {
     setSyncDot('syncing');
-    const snap = await getDoc(doc(db, 'users', user.uid, 'data', 'en_progress'));
+    const snap = await getDoc(doc(db, 'users', currentUser.uid, 'data', 'en_progress'));
     if (!snap.exists()) { setSyncDot('ok'); return; }
     const remote = snap.data();
-    const local  = JSON.parse(localStorage.getItem('en_v1') || '{}');
-    const rr = remote.stats?.totalReviews ?? 0;
-    const lr = local.stats?.totalReviews  ?? 0;
-    // Firebase'de veri varsa ve local'den daha guncel ya da esitse: Firebase'i kullan
-    // local daha yeniyse (offline calisma yapilmis): local'i koru, push edilecek
-    if (rr >= lr) {
-      localStorage.setItem('en_v1', JSON.stringify(remote));
-    }
+    // Firebase'de veri varsa her zaman onu kullan (yunanca ile ayni davranis)
+    localStorage.setItem('en_v1', JSON.stringify(remote));
     setSyncDot('ok');
   } catch (e) {
     console.error('pull:', e);
@@ -87,14 +79,13 @@ async function pullProgress() {
 
 // Firebase'e ilerlemeyi gonder
 window.pushProgress = function() {
-  const user = window._currentUser;
-  if (!user) return;
+  if (!currentUser) return;
   clearTimeout(syncTO);
   setSyncDot('syncing');
   syncTO = setTimeout(async () => {
     try {
       const data = JSON.parse(localStorage.getItem('en_v1') || '{}');
-      await setDoc(doc(db, 'users', user.uid, 'data', 'en_progress'), data);
+      await setDoc(doc(db, 'users', currentUser.uid, 'data', 'en_progress'), data);
       setSyncDot('ok');
       setTimeout(() => setSyncDot('ready'), 2000);
     } catch (e) {
