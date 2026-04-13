@@ -36,13 +36,16 @@ window._authReady=new Promise(r=>{window._authReadyResolve=r;});
 function updateAuthUI(user){
   const btn=document.getElementById('auth-btn');
   const av=document.getElementById('auth-avatar');
+  const sb=document.getElementById('save-btn');
   if(!btn)return;
   if(user){
     btn.textContent='Cikis';btn.onclick=()=>signOut(auth);
     av.style.display='flex';av.textContent=user.displayName?user.displayName[0].toUpperCase():'?';av.title=user.email;
+    if(sb)sb.style.display='inline-block';
   }else{
     btn.textContent='Giris';btn.onclick=()=>signInWithPopup(auth,provider).catch(console.error);
     av.style.display='none';
+    if(sb)sb.style.display='none';
   }
 }
 
@@ -67,6 +70,25 @@ window.pushProgress=function(){
       setSyncDot('ok');setTimeout(()=>setSyncDot('ready'),2000);
     }catch(e){console.error('push:',e);setSyncDot('error');}
   },1500);
+};
+
+// Manuel kaydet butonu — anlik, debounce yok
+window.manualSave=async function(){
+  if(!currentUser){window.notify&&window.notify('Once giris yap!');return;}
+  const btn=document.getElementById('save-btn');
+  if(btn){btn.disabled=true;btn.textContent='Kaydediliyor...';}
+  setSyncDot('syncing');
+  try{
+    const data=JSON.parse(localStorage.getItem('en_v1')||'{}');
+    await setDoc(doc(db,'users',currentUser.uid,'data','en_progress'),data);
+    setSyncDot('ok');
+    if(btn){btn.textContent='Kaydedildi ✓';}
+    setTimeout(()=>{setSyncDot('ready');if(btn){btn.disabled=false;btn.textContent='Ilerlemeyi Kaydet';}},2000);
+  }catch(e){
+    console.error('manualSave:',e);setSyncDot('error');
+    if(btn){btn.disabled=false;btn.textContent='Ilerlemeyi Kaydet';}
+    window.notify&&window.notify('Kayit hatasi: '+e.message);
+  }
 };
 
 function setSyncDot(state){
@@ -302,6 +324,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
     <div id="auth-avatar" style="display:none;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#1a1408;font-size:12px;font-weight:600;align-items:center;justify-content:center;cursor:default;flex-shrink:0;"></div>
     <div style="display:flex;align-items:center;gap:5px;flex-shrink:0;">
       <div id="sync-dot" style="width:6px;height:6px;border-radius:50%;background:var(--text3);transition:background 0.3s;" title="Bulut sync"></div>
+      <button id="save-btn" onclick="manualSave()" style="display:none;background:var(--accent);border:none;border-radius:8px;color:#1a1408;font-size:11px;font-family:'DM Sans',sans-serif;font-weight:600;padding:4px 10px;cursor:pointer;white-space:nowrap;transition:opacity 0.15s;">Ilerlemeyi Kaydet</button>
       <button id="auth-btn" style="background:none;border:1px solid var(--border2);border-radius:8px;color:var(--text2);font-size:11px;font-family:'DM Sans',sans-serif;padding:4px 10px;cursor:pointer;white-space:nowrap;">Giris</button>
     </div>
   </div>
