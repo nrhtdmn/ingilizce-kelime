@@ -647,7 +647,7 @@ async function load(){
   document.getElementById('set-fz').value=S.settings.fuzzy;
 
   // 2. Kelimeler zaten yüklüyse fetch etme
-  //if(S.words&&S.words.length>0) return;
+  if(S.words&&S.words.length>0) return;
 
   // 3. JSON dosyalarından kelimeleri çek ve birleştir
   try{
