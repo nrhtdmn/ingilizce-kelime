@@ -11,7 +11,7 @@
 ═══════════════════════════════════════════════════════════════ -->
 <script type="module">
 import{initializeApp}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
-import{getAuth,GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+import{getAuth,GoogleAuthProvider,signInWithRedirect,getRedirectResult,signOut,onAuthStateChanged}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
 import{getFirestore,doc,setDoc,getDoc}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
 const FB_CFG={
@@ -29,11 +29,16 @@ const db       = getFirestore(fbApp);
 const provider = new GoogleAuthProvider();
 let currentUser = null, syncTO = null;
 
+// Redirect sonucu varsa isle (sayfa yeniden yuklendiginde)
+getRedirectResult(auth).then(result => {
+  if (result?.user) console.log('Redirect ile giris basarili:', result.user.email);
+}).catch(e => console.error('Redirect sonucu hatasi:', e));
+
 // Auth durumu netlesince bu Promise resolve edilir — load() bunu bekler
 window._authReady = new Promise(resolve => {
   onAuthStateChanged(auth, async user => {
     currentUser = user || null;
-    window._currentUser = currentUser; // geriye donuk uyumluluk
+    window._currentUser = currentUser;
     updateAuthUI(user);
     if (user) {
       await pullProgress();
@@ -55,7 +60,7 @@ function updateAuthUI(user) {
     av.title         = user.email;
   } else {
     btn.textContent  = 'Giris';
-    btn.onclick      = () => signInWithPopup(auth, provider).catch(console.error);
+    btn.onclick      = () => signInWithRedirect(auth, provider).catch(console.error);
     av.style.display = 'none';
   }
 }
