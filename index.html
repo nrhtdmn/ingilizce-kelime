@@ -29,14 +29,18 @@ const db       = getFirestore(fbApp);
 const provider = new GoogleAuthProvider();
 let syncTO     = null;
 
-onAuthStateChanged(auth, async user => {
-  window._currentUser = user || null;
-  updateAuthUI(user);
-  if (user) {
-    const pulled = await pullProgress();
-    if (pulled && window._appReady) location.reload();
-  }
-  setSyncDot(user ? 'ready' : 'off');
+// Auth durumu netlesince bu Promise resolve edilir — load() bunu bekler
+window._authReady = new Promise(resolve => {
+  onAuthStateChanged(auth, async user => {
+    window._currentUser = user || null;
+    updateAuthUI(user);
+    if (user) {
+      // Firebase'den cek, localStorage'a yaz, sonra resolve et
+      await pullProgress();
+    }
+    setSyncDot(user ? 'ready' : 'off');
+    resolve(); // artik load() devam edebilir
+  });
 });
 
 function updateAuthUI(user) {
@@ -57,29 +61,27 @@ function updateAuthUI(user) {
 }
 
 // Firebase'den ilerlemeyi cek
-// Donus: true → yeni veri geldi (reload gerekli), false → degisiklik yok
+// Her zaman Firebase'i esas alir — giriş yapilmissa ilerleme oradan gelir
 async function pullProgress() {
   const user = window._currentUser;
-  if (!user) return false;
+  if (!user) return;
   try {
     setSyncDot('syncing');
     const snap = await getDoc(doc(db, 'users', user.uid, 'data', 'en_progress'));
-    if (!snap.exists()) { setSyncDot('ok'); return false; }
+    if (!snap.exists()) { setSyncDot('ok'); return; }
     const remote = snap.data();
     const local  = JSON.parse(localStorage.getItem('en_v1') || '{}');
     const rr = remote.stats?.totalReviews ?? 0;
     const lr = local.stats?.totalReviews  ?? 0;
+    // Firebase'de veri varsa ve local'den daha guncel ya da esitse: Firebase'i kullan
+    // local daha yeniyse (offline calisma yapilmis): local'i koru, push edilecek
     if (rr >= lr) {
       localStorage.setItem('en_v1', JSON.stringify(remote));
-      setSyncDot('ok');
-      return rr > lr;
     }
     setSyncDot('ok');
-    return false;
   } catch (e) {
     console.error('pull:', e);
     setSyncDot('error');
-    return false;
   }
 }
 
@@ -552,7 +554,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
 <div id="tab-settings" class="view">
   <div class="sv">
     <div class="ss"><div class="sl">Deste Ayarlari</div>
-      <div class="sr"><div><div class="sr-t">Deste basina kelime</div><div class="sr-s">Varsayilan: 15</div></div><input type="number" class="ni" id="set-ds" value="15" min="5" max="50" onchange="saveSetting('deckSize',this.value)"></div>
+      <div class="sr"><div><div class="sr-t">Deste basina kelime</div><div class="sr-s">Varsayilan: 15</div></div><input type="number" class="ni" id="set-ds" value="20" min="5" max="50" onchange="saveSetting('deckSize',this.value)"></div>
       <div class="sr"><div><div class="sr-t">Bulanik esleme (0-3)</div><div class="sr-s">Yazim hatasi toleransi</div></div><input type="number" class="ni" id="set-fz" value="1" min="0" max="6" onchange="saveSetting('fuzzy',this.value)"></div>
     </div>
     <div class="ss"><div class="sl">Ogrenme Sistemi</div>
@@ -664,7 +666,13 @@ function showLoadingScreen(show, msg) {
 //      - Manuel eklenen kelimeler (JSON'da olmayan) aynen korunur
 //      - JSON'da yeni gelen kelimeler level:'new' ile eklenir
 async function load() {
-  // 1. localStorage
+  // 1. Firebase auth tamamlanana kadar bekle (pullProgress localStorage'a yazmis olacak)
+  if (window._authReady) {
+    showLoadingScreen(true, 'Hesap kontrol ediliyor...');
+    await window._authReady;
+  }
+
+  // 2. localStorage oku (Firebase pull zaten buraya yazmis olabilir)
   try { const r=localStorage.getItem(STORE); if(r) S=JSON.parse(r); } catch(e){ console.warn('localStorage parse hatasi:',e); }
 
   // Eksik alanlari garantiye al
@@ -678,7 +686,7 @@ async function load() {
   document.getElementById('set-ds').value = S.settings.deckSize;
   document.getElementById('set-fz').value = S.settings.fuzzy;
 
-  // 2. JSON masterlist
+  // 3. JSON masterlist
   try {
     showLoadingScreen(true,'Kelime listesi yukleniyor...');
     const results = await Promise.all(
@@ -1247,7 +1255,7 @@ function updStreak(phase){
 function updateHeader(){
   document.getElementById('h-total').textContent     =S.words.length;
   document.getElementById('h-perm').textContent      =S.words.filter(w=>w.level==='permanent').length;
-  document.getElementById('streak-badge').textContent='&#128293; '+S.stats.streak+' gun';
+  document.getElementById('streak-badge').innerHTML='&#128293; '+S.stats.streak+' gün';
 }
 
 // ── Confetti ───────────────────────────────────────────────
