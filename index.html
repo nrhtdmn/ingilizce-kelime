@@ -14,88 +14,182 @@ import{initializeApp}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-ap
 import{getAuth,GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
 import{getFirestore,doc,setDoc,getDoc}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
-const FB_CFG={apiKey:"AIzaSyBD0BwWNj1ypc2oMk_ZndkwlqUsimC8Y4E",authDomain:"yunancaokuyucu.firebaseapp.com",projectId:"yunancaokuyucu",storageBucket:"yunancaokuyucu.firebasestorage.app",messagingSenderId:"434539375134",appId:"1:434539375134:web:2538e78f0d15489c26dc0f"};
+const FB_CFG={
+  apiKey:"AIzaSyBD0BwWNj1ypc2oMk_ZndkwlqUsimC8Y4E",
+  authDomain:"yunancaokuyucu.firebaseapp.com",
+  projectId:"yunancaokuyucu",
+  storageBucket:"yunancaokuyucu.firebasestorage.app",
+  messagingSenderId:"434539375134",
+  appId:"1:434539375134:web:2538e78f0d15489c26dc0f"
+};
 
-const fbApp=initializeApp(FB_CFG);
-const auth=getAuth(fbApp);
-const db=getFirestore(fbApp);
-const provider=new GoogleAuthProvider();
-let currentUser=null,syncTO=null;
+const fbApp    = initializeApp(FB_CFG);
+const auth     = getAuth(fbApp);
+const db       = getFirestore(fbApp);
+const provider = new GoogleAuthProvider();
+let syncTO     = null;
 
-onAuthStateChanged(auth,async user=>{
-  currentUser=user||null;
-  window._currentUser=currentUser;
+let currentUser = null;
+onAuthStateChanged(auth, async user => {
+  currentUser = user || null;
+  window._currentUser = currentUser;
   updateAuthUI(user);
-  if(user){await pullProgress();}
-  setSyncDot(user?'ready':'off');
-  if(window._authReadyResolve){window._authReadyResolve();window._authReadyResolve=null;}
+  if (user) { await pullProgress(); }
+  setSyncDot(user ? 'ready' : 'off');
+  if (window._authReadyResolve) { window._authReadyResolve(); window._authReadyResolve = null; }
 });
+window._authReady = new Promise(r => { window._authReadyResolve = r; });
 
-window._authReady=new Promise(r=>{window._authReadyResolve=r;});
-
-function updateAuthUI(user){
-  const btn=document.getElementById('auth-btn');
-  const av=document.getElementById('auth-avatar');
-  const sb=document.getElementById('save-btn');
-  if(!btn)return;
-  if(user){
-    btn.textContent='Cikis';btn.onclick=()=>signOut(auth);
-    av.style.display='flex';av.textContent=user.displayName?user.displayName[0].toUpperCase():'?';av.title=user.email;
-    if(sb)sb.style.display='inline-block';
-  }else{
-    btn.textContent='Giris';btn.onclick=()=>signInWithPopup(auth,provider).catch(console.error);
-    av.style.display='none';
-    if(sb)sb.style.display='none';
+function updateAuthUI(user) {
+  const btn = document.getElementById('auth-btn');
+  const av  = document.getElementById('auth-avatar');
+  if (!btn) return;
+  const sb = document.getElementById('save-btn');
+  if (user) {
+    btn.textContent  = 'Cikis';
+    btn.onclick      = () => signOut(auth);
+    av.style.display = 'flex';
+    av.textContent   = user.displayName ? user.displayName[0].toUpperCase() : '?';
+    av.title         = user.email;
+    if (sb) sb.style.display = 'inline-block';
+  } else {
+    btn.textContent  = 'Giris';
+    btn.onclick      = () => signInWithPopup(auth, provider).catch(console.error);
+    av.style.display = 'none';
+    if (sb) sb.style.display = 'none';
   }
 }
 
-async function pullProgress(){
-  if(!currentUser)return;
-  try{
-    setSyncDot('syncing');
-    const snap=await getDoc(doc(db,'users',currentUser.uid,'data','en_progress'));
-    if(!snap.exists()){setSyncDot('ok');return;}
-    localStorage.setItem('en_v1',JSON.stringify(snap.data()));
-    setSyncDot('ok');
-  }catch(e){console.error('pull:',e);setSyncDot('error');}
+// Firebase'e gondermek icin sadece ilerleme verisini cıkar (tanim alanlari haric)
+// Boylece 1MB limitine takilmaz
+function slimData() {
+  const local = JSON.parse(localStorage.getItem('en_v1') || '{}');
+  return {
+    decks:   local.decks   || [],
+    stats:   local.stats   || {},
+    monthly: local.monthly || {},
+    settings:local.settings|| {},
+    // Kelimelerden sadece ilerleme alanlari — word/meaning/phonetic/example disarida
+    wordProgress: (local.words || []).map(w => ({
+      id:          w.id,
+      deckId:      w.deckId      || null,
+      level:       w.level       || 'new',
+      reviewStep:  w.reviewStep  ?? 0,
+      nextReview:  w.nextReview  || null,
+      streakCount: w.streakCount ?? 0,
+      addedDate:   w.addedDate   || null,
+      // Manuel eklenen kelimeler icin tanim alanlari da sakla
+      ...(w.id && w.id.startsWith('manual_') ? {
+        word:      w.word,
+        meaning:   w.meaning,
+        phonetic:  w.phonetic  || '',
+        example:   w.example   || '',
+        exampleTr: w.exampleTr || ''
+      } : {})
+    }))
+  };
 }
 
-window.pushProgress=function(){
-  if(!currentUser)return;
-  clearTimeout(syncTO);setSyncDot('syncing');
-  syncTO=setTimeout(async()=>{
-    try{
-      const data=JSON.parse(localStorage.getItem('en_v1')||'{}');
-      await setDoc(doc(db,'users',currentUser.uid,'data','en_progress'),data);
-      setSyncDot('ok');setTimeout(()=>setSyncDot('ready'),2000);
-    }catch(e){console.error('push:',e);setSyncDot('error');}
-  },1500);
+// Firebase'den ilerlemeyi cek, localStorage'daki full veriyle birlestir
+async function pullProgress() {
+  const user = window._currentUser;
+  if (!user) return;
+  try {
+    setSyncDot('syncing');
+    const snap = await getDoc(doc(db, 'users', user.uid, 'data', 'en_progress'));
+    if (!snap.exists()) { setSyncDot('ok'); return; }
+    const remote = snap.data();
+    // Mevcut local veriyi al, sadece ilerleme alanlarini Firebase'den guncelle
+    const local = JSON.parse(localStorage.getItem('en_v1') || '{}');
+    // stats, decks, monthly, settings Firebase'den gelsin
+    local.stats   = remote.stats   || local.stats   || {};
+    local.decks   = remote.decks   || local.decks   || [];
+    local.monthly = remote.monthly || local.monthly || {};
+    local.settings= remote.settings|| local.settings|| {};
+    // wordProgress varsa ilerleme map'i olustur ve local words'e uygula
+    if (remote.wordProgress && Array.isArray(remote.wordProgress)) {
+      const progMap = {};
+      for (const p of remote.wordProgress) progMap[p.id] = p;
+      // Mevcut words varsa ilerlemeyi guncelle
+      if (local.words && local.words.length) {
+        local.words = local.words.map(w => {
+          const p = progMap[w.id];
+          if (!p) return w;
+          return { ...w, level: p.level, reviewStep: p.reviewStep, nextReview: p.nextReview,
+                   streakCount: p.streakCount, addedDate: p.addedDate, deckId: p.deckId };
+        });
+        // Manuel kelimeler (Firebase'den gelen, local'de olmayan)
+        const localIds = new Set(local.words.map(w => w.id));
+        for (const p of remote.wordProgress) {
+          if (p.id.startsWith('manual_') && !localIds.has(p.id)) {
+            local.words.push({ id:p.id, deckId:p.deckId, level:p.level, reviewStep:p.reviewStep,
+              nextReview:p.nextReview, streakCount:p.streakCount, addedDate:p.addedDate,
+              word:p.word||'', meaning:p.meaning||'', phonetic:p.phonetic||'',
+              example:p.example||'', exampleTr:p.exampleTr||'' });
+          }
+        }
+      } else {
+        // Local words yok — JSON henuz yuklenmedi, sadece manuel kelimeleri ekle
+        local.words = remote.wordProgress
+          .filter(p => p.id.startsWith('manual_'))
+          .map(p => ({ id:p.id, deckId:p.deckId, level:p.level, reviewStep:p.reviewStep,
+            nextReview:p.nextReview, streakCount:p.streakCount||0, addedDate:p.addedDate,
+            word:p.word||'', meaning:p.meaning||'', phonetic:p.phonetic||'',
+            example:p.example||'', exampleTr:p.exampleTr||'' }));
+      }
+    }
+    localStorage.setItem('en_v1', JSON.stringify(local));
+    setSyncDot('ok');
+  } catch (e) {
+    console.error('pull:', e);
+    setSyncDot('error');
+  }
+}
+
+// Firebase'e ilerlemeyi gonder (sadece slim veri)
+window.pushProgress = function() {
+  const user = window._currentUser;
+  if (!user) return;
+  clearTimeout(syncTO);
+  setSyncDot('syncing');
+  syncTO = setTimeout(async () => {
+    try {
+      await setDoc(doc(db, 'users', user.uid, 'data', 'en_progress'), slimData());
+      setSyncDot('ok');
+      setTimeout(() => setSyncDot('ready'), 2000);
+    } catch (e) {
+      console.error('push:', e);
+      setSyncDot('error');
+    }
+  }, 1500);
 };
 
 // Manuel kaydet butonu — anlik, debounce yok
-window.manualSave=async function(){
-  if(!currentUser){window.notify&&window.notify('Once giris yap!');return;}
-  const btn=document.getElementById('save-btn');
-  if(btn){btn.disabled=true;btn.textContent='Kaydediliyor...';}
+window.manualSave = async function() {
+  const user = window._currentUser;
+  if (!user) { window.notify && window.notify('Once giris yap!'); return; }
+  const btn = document.getElementById('save-btn');
+  if (btn) { btn.disabled=true; btn.textContent='Kaydediliyor...'; }
   setSyncDot('syncing');
-  try{
-    const data=JSON.parse(localStorage.getItem('en_v1')||'{}');
-    await setDoc(doc(db,'users',currentUser.uid,'data','en_progress'),data);
+  try {
+    await setDoc(doc(db, 'users', user.uid, 'data', 'en_progress'), slimData());
     setSyncDot('ok');
-    if(btn){btn.textContent='Kaydedildi ✓';}
-    setTimeout(()=>{setSyncDot('ready');if(btn){btn.disabled=false;btn.textContent='Ilerlemeyi Kaydet';}},2000);
-  }catch(e){
-    console.error('manualSave:',e);setSyncDot('error');
-    if(btn){btn.disabled=false;btn.textContent='Ilerlemeyi Kaydet';}
-    window.notify&&window.notify('Kayit hatasi: '+e.message);
+    if (btn) btn.textContent = 'Kaydedildi ✓';
+    setTimeout(() => { setSyncDot('ready'); if(btn){btn.disabled=false;btn.textContent='Ilerlemeyi Kaydet';} }, 2000);
+  } catch (e) {
+    console.error('manualSave:', e);
+    setSyncDot('error');
+    if (btn) { btn.disabled=false; btn.textContent='Ilerlemeyi Kaydet'; }
+    window.notify && window.notify('Kayit hatasi: ' + e.message);
   }
 };
 
-function setSyncDot(state){
-  const dot=document.getElementById('sync-dot');if(!dot)return;
-  const map={off:'var(--text3)',ready:'var(--text3)',syncing:'var(--accent)',ok:'var(--green)',error:'var(--red)'};
-  dot.style.background=map[state]||'var(--text3)';
-  dot.title={syncing:'Senkronize ediliyor',ok:'Senkronize edildi',error:'Sync hatasi',off:'Bulut sync',ready:'Bulut sync'}[state]||'';
+function setSyncDot(state) {
+  const dot = document.getElementById('sync-dot');
+  if (!dot) return;
+  const map = { off:'var(--text3)', ready:'var(--text3)', syncing:'var(--accent)', ok:'var(--green)', error:'var(--red)' };
+  dot.style.background = map[state] || 'var(--text3)';
+  dot.title = { syncing:'Senkronize ediliyor', ok:'Senkronize edildi', error:'Sync hatasi', off:'Bulut sync', ready:'Bulut sync' }[state] || '';
 }
 </script>
 
@@ -324,7 +418,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
     <div id="auth-avatar" style="display:none;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#1a1408;font-size:12px;font-weight:600;align-items:center;justify-content:center;cursor:default;flex-shrink:0;"></div>
     <div style="display:flex;align-items:center;gap:5px;flex-shrink:0;">
       <div id="sync-dot" style="width:6px;height:6px;border-radius:50%;background:var(--text3);transition:background 0.3s;" title="Bulut sync"></div>
-      <button id="save-btn" onclick="manualSave()" style="display:none;background:var(--accent);border:none;border-radius:8px;color:#1a1408;font-size:11px;font-family:'DM Sans',sans-serif;font-weight:600;padding:4px 10px;cursor:pointer;white-space:nowrap;transition:opacity 0.15s;">Ilerlemeyi Kaydet</button>
+      <button id="save-btn" onclick="manualSave()" style="display:none;background:var(--accent);border:none;border-radius:8px;color:#1a1408;font-size:11px;font-family:'DM Sans',sans-serif;font-weight:600;padding:4px 10px;cursor:pointer;white-space:nowrap;">Ilerlemeyi Kaydet</button>
       <button id="auth-btn" style="background:none;border:1px solid var(--border2);border-radius:8px;color:var(--text2);font-size:11px;font-family:'DM Sans',sans-serif;padding:4px 10px;cursor:pointer;white-space:nowrap;">Giris</button>
     </div>
   </div>
